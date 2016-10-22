@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE `users` (
+	`_id`	INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
+	`name`	TEXT NOT NULL
+);
+INSERT INTO `users` VALUES (1,'pepe');
+INSERT INTO `users` VALUES (2,'tata');
+CREATE TABLE `android_metadata` (
+	`locale`	TEXT DEFAULT 'en_US'
+);
+COMMIT;
