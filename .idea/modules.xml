@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/nonasoft-master.iml" filepath="$PROJECT_DIR$/nonasoft-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nonasoft.iml" filepath="$PROJECT_DIR$/nonasoft.iml" />
     </modules>
   </component>
 </project>

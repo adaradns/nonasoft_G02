@@ -4,5 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#b9d4ff</color>
     <color name="lightBlue">#199DF6</color>
-    <color name="blueIntroduction">#0777b7</color>
+    <color name="blue">#007CC3</color>
+    <color name="withe">#fff</color>
+    <color name="purpure">#974578</color>
+    <color name="grey">#DFDFDF</color>
 </resources>

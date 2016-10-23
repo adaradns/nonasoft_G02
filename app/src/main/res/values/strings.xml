@@ -7,10 +7,16 @@
     <!--LOGIN-->
     <string name="login_registro">Bienvenido aqui podras registrarte</string>
     <string name="login_ingreso">Bienvenido coloca tu nombre de usuario y contraseña</string>
-    <string name="username">Nombre de usuario</string>
+    <string name="txtusername">NOMBRE</string>
+    <string name="txtpassword">CONTRASEÑA</string>
+    <string name="txtConfirmpass">CONFIRMAR CONTRASEÑA</string>
+    <string name="placeholderName">Ingresa tu nombre</string>
+    <string name="placeholderPass">Ingresa tu contraseña</string>
+    <string name="placeholderConfirmPass">Vuelve a ingresar contraseña</string>
     <string name="registrarse">Registrarse</string>
     <string name="ingresar">Ingresar</string>
-    <string name="password">Contraseñaa</string>
+    <string name="noaccount">¿Aun no tienes cuenta?</string>
+    <string name="verpass">VER CONTRASEÑA</string>
 
 
     <!--Presentacion-->

@@ -19,7 +19,6 @@ import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +27,9 @@ import java.util.List;
  * Created by Adara on 9/22/2016.
  */
 public class Register  extends Activity implements View.OnClickListener {
-    private EditText user, pass, confirmpass;
+    private EditText user, pass;
     private Button btnRegistrar;
-    private TextView txtName, txtPassword, txtCofirmPassword;
+    private TextView txtName, txtPassword;
     private CheckBox showpassword;
 
     // Progress Dialog
@@ -56,14 +55,21 @@ public class Register  extends Activity implements View.OnClickListener {
         //EditText
         user = (EditText)findViewById(R.id.username);
         pass = (EditText)findViewById(R.id.password);
+     //   confirmpass = (EditText) findViewById(R.id.confirmpass);
+
+        //set textColor
+        user.setHintTextColor(getResources().getColor(R.color.grey));
+        pass.setHintTextColor(getResources().getColor(R.color.grey));
+        //confirmpass.setHintTextColor(getResources().getColor(R.color.grey));
+
+        //Set typePassword
         pass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        confirmpass = (EditText) findViewById(R.id.confirmpassword);
-        confirmpass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+      //  confirmpass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
 
         //TextView
         txtName = (TextView) findViewById(R.id.txtName);
         txtPassword = (TextView) findViewById(R.id.txtPassword);
-        txtCofirmPassword = (TextView) findViewById(R.id.txtConfirmPass);
+     //   txtConfirmpass = (TextView) findViewById(R.id.txtConirmpass);
 
         //Checkbox
         showpassword = (CheckBox) findViewById(R.id.showpassword);
@@ -78,7 +84,7 @@ public class Register  extends Activity implements View.OnClickListener {
                 user.setText("");
                 txtName.setVisibility(View.VISIBLE);
                 txtPassword.setVisibility(View.VISIBLE);
-                txtCofirmPassword.setVisibility(View.VISIBLE);
+              //  txtConfirmpass.setVisibility(View.VISIBLE);
 
             }
         });
@@ -88,12 +94,27 @@ public class Register  extends Activity implements View.OnClickListener {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     pass.setTransformationMethod(null);
-                    confirmpass.setTransformationMethod(null);
+                //    confirmpass.setTransformationMethod(null);
                     showpassword.setText("OCULTAR CONTRASEÑA");
                 }else{
                     showpassword.setText("VER CONTRASEÑA");
                     pass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                    confirmpass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                //    confirmpass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
+            }
+        });
+
+
+        //validator
+        pass.addTextChangedListener(new Validator(pass, user) {
+            @Override
+            public void validate(EditText pass, EditText user, String textUser, String textPass) {
+                //Reglas de validacion
+                if(textUser.length() < 5){
+                    user.setError("El nombre es demasiado corto");
+                }
+                if( textPass.length() < 7 ){
+                    pass.setError( "La contraseña es demasiado corta" );
                 }
             }
         });
@@ -144,10 +165,7 @@ public class Register  extends Activity implements View.OnClickListener {
 
                 // json success element
                 success = json.getInt(TAG_SUCCESS);
-               /* if ((confirmpass != null) && password.equals(confirmpass)) {
-                    Log.d("Ok pass iguales", json.toString());
-                    return json.getString(TAG_MESSAGE);
-                }*/
+
                  if (success == 1) {
                     Log.d("Usuario creado", json.toString());
                     finish();

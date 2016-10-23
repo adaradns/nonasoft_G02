@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="@color/blueIntroduction"
+    android:background="@color/blue"
     android:gravity="top|bottom">
 
     <TextView
@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/presentacion"
         android:textSize="18sp"
-        android:textColor="#fff"
+        android:textColor="@color/withe"
         android:id="@+id/textView"
         android:textAlignment="center"
         android:layout_alignParentLeft="true"

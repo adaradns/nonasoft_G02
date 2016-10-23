@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.Activities.IntroductionOneActivity;
+import com.app.nonasoft.grupo2_desarrollodesoftware.Activities.SegundaActivity;
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
 import org.apache.http.message.BasicNameValuePair;
@@ -65,7 +66,12 @@ public class Login extends Activity implements View.OnClickListener {
         user = (EditText) findViewById(R.id.username);
         pass = (EditText) findViewById(R.id.password);
 
+        //set typeInput
         pass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+
+        //set colors
+        user.setHintTextColor(getResources().getColor(R.color.grey));
+        pass.setHintTextColor(getResources().getColor(R.color.grey));
 
         //set textView
         txtName = (TextView) findViewById(R.id.txtName);
@@ -186,6 +192,9 @@ public class Login extends Activity implements View.OnClickListener {
             if (file_url != null) {
                 Toast.makeText(Login.this, file_url, Toast.LENGTH_LONG).show();
             }
+            pDialog.cancel();
+
+
         }
     }
 }

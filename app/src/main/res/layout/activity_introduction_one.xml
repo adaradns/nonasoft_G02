@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="@color/blueIntroduction"
+    android:background="@color/blue"
     android:gravity="top|bottom">
 
     <TextView
@@ -11,7 +11,7 @@
         android:layout_height="139dp"
         android:text="@string/introduccionOne"
         android:textSize="23sp"
-        android:background="@color/blueIntroduction"
+        android:background="@color/blue"
         android:textColor="#fff"
         android:typeface="normal"
         android:textAlignment="center"
