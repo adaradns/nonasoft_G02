@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="355dp"
+        android:layout_height="103dp"
+        android:text="@string/introductionFour"
+        android:textSize="20sp"
+        android:background="@color/blue"
+        android:textColor="@color/withe"
+        android:typeface="normal"
+        android:textAlignment="center"
+        android:paddingTop="40dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.32" />
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="181dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/juego"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:weightSum="1"
+        android:layout_weight="0.36">
+
+        <Button
+            android:layout_width="171dp"
+            android:layout_height="66dp"
+            android:gravity="top"
+            android:id="@+id/btnNext"
+            android:layout_marginLeft="180dp"
+            android:text="@string/siguiente"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/pressed_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

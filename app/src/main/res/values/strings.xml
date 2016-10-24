@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="este_es_un_nuevo_tutorial">Este es un nuevo tutorial</string>
+
+    <!--LOGIN-->
+    <string name="login_registro">Bienvenido aqui podras registrarte</string>
+    <string name="login_ingreso">Bienvenido coloca tu nombre de usuario y contraseña</string>
+    <string name="txtusername">NOMBRE</string>
+    <string name="txtpassword">CONTRASEÑA</string>
+    <string name="txtConfirmpass">CONFIRMAR CONTRASEÑA</string>
+    <string name="placeholderName">Ingresa tu nombre</string>
+    <string name="placeholderPass">Ingresa tu contraseña</string>
+    <string name="placeholderConfirmPass">Vuelve a ingresar contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="noaccount">¿Aun no tienes cuenta?</string>
+    <string name="verpass">VER CONTRASEÑA</string>
+
+
+    <!--Presentacion-->
+    <string name="presentacion">Nonasoft es una aplicacion que te ayudara, mediante tutoriales didacticos, aprender el manejo basico de tu celular.</string>
+
+
+    <string name="Nonasoft">Nonasoft</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="bienvenida">Bienvenido</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="desafio">¡LA NONA TE DESAFIA!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tutorial_part">tutorialPart</string>
+
+
+    <string name="introduccionOne">Esta aplicacion te ayudara a entender el manejo de tu celular, desde lo mas basico a lo mas complejo como por ejemplo:</string>
+    <string name="introduccionTwo">Aqui podras visualizar el menu principal de la aplicacion. Se divide en tres niveles Inicial, Intermedio y Avanzado, podra elegir cualquiera de las opciones
+    para comenzar.</string>
+    <string name="introduccionThree">En la imagen podra observar el ejemplo de un tutorial para agregar un contacto</string>
+    <string name="introductionFour">Tambien tendras la posibilidad de jugar al juego de preguntas y respuestas que te da la posibildiad de
+    avanzar y obtener logros</string>
+
+    <string name="imgIntroductionOne">Tomar fotos</string>
+    <string name="imgIntroductionTwo">Escuchar Musica</string>
+    <string name="imgIntroductionTrhee">Utilizar Aplicaciones</string>
+
+    <!--Buttons-->
+    <string name="siguiente">Siguiente</string>
+    <string name="comenzar">comenzar</string>
+    <string name="entendido">entendido</string>
+    <string name="jugar">JUGAR</string>
+    <string name="title_activity_segunda">SegundaActivity</string>
+</resources>

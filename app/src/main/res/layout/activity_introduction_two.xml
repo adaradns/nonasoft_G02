@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:text="@string/introduccionTwo"
+        android:textSize="20sp"
+        android:background="@color/blue"
+        android:textColor="@color/withe"
+        android:typeface="normal"
+        android:textAlignment="center"
+        android:paddingTop="30dp"
+        android:layout_weight="0.47"
+        android:padding="15dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="216dp"
+                android:layout_height="159dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/menu"
+                android:layout_marginLeft="80dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="171dp"
+            android:layout_height="66dp"
+            android:gravity="top"
+            android:id="@+id/btnNext"
+            android:layout_marginLeft="180dp"
+            android:text="@string/siguiente"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/pressed_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

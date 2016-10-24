@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.nonasoft.grupo2_desarrollodesoftware">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/Nonasoft"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Declaracion de activity -->
+        <activity
+            android:name=".Activities.IndexViewActivity"
+            android:label="@string/Nonasoft" />
+        <activity android:name=".Activities.Menu" />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+        <activity android:name=".Activities.IntroductionOneActivity" />
+        <activity android:name=".Activities.IntroductionTwoActivity" />
+        <activity android:name=".Activities.IntroductionThreeActivity" />
+        <activity android:name=".Activities.LoginWithGoogle" />
+        <activity android:name=".Activities.IntroductionFourActivity" />
+        <activity android:name=".Login.Login" />
+        <activity android:name=".Login.Register" />
+        <activity
+            android:name=".Activities.SegundaActivity"
+            android:label="@string/title_activity_segunda"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.nonasoft.grupo2_desarrollodesoftware.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.TutorialActivity"
+            android:parentActivityName=".Activities.SegundaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.SegundaActivity" />
+        </activity>
+    </application>
+
+</manifest>
