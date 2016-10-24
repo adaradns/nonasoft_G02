@@ -8,4 +8,7 @@
     <color name="withe">#fff</color>
     <color name="purpure">#974578</color>
     <color name="grey">#DFDFDF</color>
+    <color name="greymenu">#E6E6E6</color>
+    <color name="clearpurpure">#C985A3</color>
+    <color name="fuccia">#DD137B</color>
 </resources>

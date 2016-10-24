@@ -3,8 +3,6 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.TabHost;
 
@@ -25,6 +24,7 @@ public class SegundaActivity extends AppCompatActivity
     ExpandableListView lista_expandible_incial;
     ExpandableListView lista_expandible_intermedo;
     ExpandableListView lista_expandible_avazado;
+    private Button btnJugar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +41,8 @@ public class SegundaActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        btnJugar = (Button) findViewById(R.id.btnJugar);
 
         //Creando las tablas "inicial" "medio" "avanzado"
         Resources res = getResources();
@@ -67,6 +69,15 @@ public class SegundaActivity extends AppCompatActivity
         //ExpandableListView
         lista_expandible_incial = (ExpandableListView) findViewById(R.id.expandableListView1);
         lista_expandible_incial.setAdapter(new AdaptadorInicial(this));
+
+        //Funcionalidad btnJugar
+        btnJugar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent btnNext = new Intent(SegundaActivity.this, OpcionesMinijuego.class);
+                startActivity(btnNext);
+            }
+        });
 
         lista_expandible_incial.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
@@ -155,11 +166,7 @@ public class SegundaActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
-<<<<<<< HEAD
-
-=======
             Intent intent = new Intent(Intent.ACTION_MAIN); finish();
->>>>>>> test
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

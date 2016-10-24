@@ -16,12 +16,11 @@
     <string name="registrarse">Registrarse</string>
     <string name="ingresar">Ingresar</string>
     <string name="noaccount">¿Aun no tienes cuenta?</string>
-<<<<<<< HEAD
+
     <string name="verpass">Ver contraseña</string>
     <string name="rememberme">Recordarme</string>
-=======
-    <string name="verpass">VER CONTRASEÑA</string>
->>>>>>> test
+
+
 
 
     <!--Presentacion-->
@@ -54,6 +53,14 @@
     <string name="siguiente">Siguiente</string>
     <string name="comenzar">comenzar</string>
     <string name="entendido">entendido</string>
-    <string name="jugar">JUGAR</string>
+    <string name="jugar">JUGA Y EVALUATE</string>
     <string name="title_activity_segunda">SegundaActivity</string>
+    
+    <!--INICIAL LEVEL-->
+    <string name="gContacts">GESTION DE CONTACTOS</string>
+    <string name="llamadas">LLAMADAS</string>
+    <string name="camera">USO DE CAMARA</string>
+    <string name="galeryimg">GALERIA DE IMAGENES</string>
+    <string name="opcionesInicial">OPCIONES PARA JUGAR</string>
+    <string name="inicialOpc">nivel inicial</string>
 </resources>

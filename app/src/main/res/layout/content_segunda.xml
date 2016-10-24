@@ -8,8 +8,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Activities.SegundaActivity"
     tools:showIn="@layout/app_bar_segunda"
-    android:orientation="vertical"
-    android:background="#E6E6E6">
+    android:orientation="vertical">
 
     <TabHost
         android:id="@android:id/tabhost"
@@ -21,7 +20,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
             <TabWidget
                 android:layout_width="match_parent"
@@ -72,49 +72,26 @@
 
         </LinearLayout>
     </TabHost>
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1.78"
-        android:orientation="vertical"
-        android:weightSum="1">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:text="@string/desafio"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/textView"
-            android:gravity="center_horizontal"
-            android:textAlignment="center" />
-
-        <ImageView
-            android:layout_width="119dp"
-            android:layout_height="138dp"
-            android:id="@+id/imageView2"
-            android:background="@drawable/logo"
-            android:layout_gravity="center_horizontal"
-            android:contentDescription="" />
-
-    </LinearLayout>
-
-    <Button
-        android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:textStyle="bold"
+        android:layout_weight="0.33"
+        android:background="@color/greymenu">
+    <Button
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
         android:text="@string/jugar"
-        android:textColor="#ffffff"
-        android:id="@+id/button2"
+        android:textColor="@color/withe"
+        android:id="@+id/btnJugar"
         android:focusableInTouchMode="false"
         android:gravity="center_horizontal"
-        android:background="@drawable/pressed_button"
+        android:background="@color/purpure"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="5dp" />
-
+        android:paddingTop="5dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
 
 </LinearLayout>

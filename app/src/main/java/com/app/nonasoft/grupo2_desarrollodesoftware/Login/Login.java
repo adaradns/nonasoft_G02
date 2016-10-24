@@ -2,10 +2,7 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Login;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-<<<<<<< HEAD
 import android.content.Context;
-=======
->>>>>>> test
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -16,10 +13,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
-<<<<<<< HEAD
 import android.view.inputmethod.InputMethodManager;
-=======
->>>>>>> test
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -29,10 +23,7 @@ import android.widget.Toast;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.Activities.IntroductionOneActivity;
 import com.app.nonasoft.grupo2_desarrollodesoftware.Activities.SegundaActivity;
-<<<<<<< HEAD
 import com.app.nonasoft.grupo2_desarrollodesoftware.MainActivity;
-=======
->>>>>>> test
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
 import org.apache.http.message.BasicNameValuePair;
@@ -48,23 +39,15 @@ import java.util.List;
  */
 public class Login extends Activity implements View.OnClickListener {
 
-<<<<<<< HEAD
     String username, password;
-=======
->>>>>>> test
     private EditText user, pass;
     private Button btnIngresar, btnRegistrar;
     private TextView txtName, txtPassword;
     private CheckBox showpassword;
-<<<<<<< HEAD
     private CheckBox rememberme;
     private SharedPreferences loginPreferences;
     private SharedPreferences.Editor loginPrefsEditor;
     private Boolean saveLogin;
-=======
->>>>>>> test
-
-
     private ProgressDialog pDialog;
 
     // Clase JSONParser
@@ -106,14 +89,12 @@ public class Login extends Activity implements View.OnClickListener {
 
         // set checkbox
         showpassword = (CheckBox) findViewById(R.id.showpassword);
-<<<<<<< HEAD
         rememberme = (CheckBox)findViewById(R.id.rememberme);
 
         //Preferences
         loginPreferences = getSharedPreferences("loginPrefs", MODE_PRIVATE);
         loginPrefsEditor = loginPreferences.edit();
-=======
->>>>>>> test
+
 
         // registro listeners
         btnIngresar.setOnClickListener(this);
@@ -134,39 +115,29 @@ public class Login extends Activity implements View.OnClickListener {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     pass.setTransformationMethod(null);
-<<<<<<< HEAD
+
                     showpassword.setText("Ocultar contraseña");
                 }else{
                     showpassword.setText("Ver Contraseña");
-=======
                     showpassword.setText("OCULTAR CONTRASEÑA");
-                }else{
-                    showpassword.setText("VER CONTRASEÑA");
->>>>>>> test
-                    pass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 }
             }
         });
 
-<<<<<<< HEAD
         saveLogin = loginPreferences.getBoolean("saveLogin", false);
         if (saveLogin == true) {
             user.setText(loginPreferences.getString("username", ""));
             pass.setText(loginPreferences.getString("password", ""));
             rememberme.setChecked(true);
         }
-=======
 
->>>>>>> test
     }
 
     @Override
     public void onClick(View v) {
-<<<<<<< HEAD
 
 
-=======
->>>>>>> test
+
         // TODO Auto-generated method stub
         switch (v.getId()) {
             case R.id.login:
@@ -180,7 +151,7 @@ public class Login extends Activity implements View.OnClickListener {
             default:
                 break;
         }
-<<<<<<< HEAD
+
 
         if (v == btnIngresar) {
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -200,8 +171,7 @@ public class Login extends Activity implements View.OnClickListener {
             }
         }
 
-=======
->>>>>>> test
+
     }
 
     class AttemptLogin extends AsyncTask<String, String, String> {
@@ -267,11 +237,7 @@ public class Login extends Activity implements View.OnClickListener {
             }
             pDialog.cancel();
 
-<<<<<<< HEAD
-
-=======
             finish();
->>>>>>> test
         }
     }
 }

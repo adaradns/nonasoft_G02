@@ -16,16 +16,11 @@
             android:title="Opciones de silencio" />
         <item
             android:id="@+id/nav_manage"
-<<<<<<< HEAD
             android:icon="@drawable/ic_menu_send"
             android:title="Salir" />
-=======
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:icon="@drawable/ic_menu_send"
-            android:title="salir de la aplicaciont"
-             />
->>>>>>> test
+
+
+
     </group>
 
 </menu>

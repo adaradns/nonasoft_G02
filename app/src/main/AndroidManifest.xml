@@ -45,6 +45,7 @@
         <activity android:name=".Activities.IntroductionFourActivity" />
         <activity android:name=".Login.Login" />
         <activity android:name=".Login.Register" />
+        <activity android:name=".Activities.OpcionesMinijuego"></activity>
         <activity
             android:name=".Activities.SegundaActivity"
             android:label="@string/title_activity_segunda"

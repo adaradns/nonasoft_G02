@@ -37,11 +37,8 @@ public class IndexViewActivity extends Activity {
             public void onClick(View v) {
                 Intent btnComenzar = new Intent(IndexViewActivity.this, IntroductionOneActivity.class);
                 startActivity(btnComenzar);
-<<<<<<< HEAD
-=======
 
                 finish();
->>>>>>> test
             }
         });
 

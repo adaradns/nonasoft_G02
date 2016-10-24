@@ -1,0 +1,42 @@
+[33mcommit eb75036bddb9de4ce90506ef02f9493af1cd4d21[m
+Merge: d5d846f 00904f8
+Author: adaradns <adaradenis@gmail.com>
+Date:   Mon Oct 24 04:32:51 2016 -0300
+
+    add login register
+
+[33mcommit 00904f8aa169fd5d00a5265011485935b11ce386[m
+Author: adaradns <adaradenis@gmail.com>
+Date:   Mon Oct 24 04:11:32 2016 -0300
+
+    add button remember me login
+
+[33mcommit d5d846f7f4786b9016b5d5c1e96feee73ee987e2[m
+Author: adaradns <adaradenis@gmail.com>
+Date:   Mon Oct 24 03:23:51 2016 -0300
+
+    add checkbox rememberme login
+
+[33mcommit 7624ac501a1c42a8f31e3ef9f763bb05ca9d3b54[m
+Author: tomasniesi <tomasniesi1296@gmail.com>
+Date:   Mon Oct 24 04:05:25 2016 -0200
+
+    add debug file
+
+[33mcommit 284603a60bc5b02605be83d5d9aaf7072824b293[m
+Author: tomasniesi <tomasniesi1296@gmail.com>
+Date:   Mon Oct 24 03:29:20 2016 -0200
+
+    se le agrego a la aplicacion funcionalidad al boton de salida
+
+[33mcommit 4920b4bff5322f0e120f5314aa14a4a6a18e5214[m
+Author: adaradns <adaradenis@gmail.com>
+Date:   Sun Oct 23 05:34:45 2016 -0300
+
+    validation form login and register
+
+[33mcommit 8f5cd487949edcdc2a1635183689b4105141ba60[m
+Author: adaradns <adaradenis@gmail.com>
+Date:   Sat Oct 22 06:37:15 2016 -0300
+
+    add presentacion - add login - add navigation drawer - add menu

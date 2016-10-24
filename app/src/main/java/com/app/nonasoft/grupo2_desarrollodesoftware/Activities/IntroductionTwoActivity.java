@@ -26,11 +26,7 @@ public class IntroductionTwoActivity extends Activity {
             public void onClick(View v) {
                 Intent btnNext = new Intent(IntroductionTwoActivity.this, IntroductionThreeActivity.class);
                 startActivity(btnNext);
-<<<<<<< HEAD
-=======
-
                 finish();
->>>>>>> test
             }
         });
 
