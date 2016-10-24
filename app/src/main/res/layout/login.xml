@@ -117,6 +117,16 @@
             android:layout_alignRight="@+id/login"
             android:layout_alignEnd="@+id/login" />
 
+        <CheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/rememberme"
+            android:layout_above="@+id/login"
+            android:layout_alignLeft="@+id/login"
+            android:layout_alignStart="@+id/login" />
+
         <Button
             android:id="@+id/registro"
             android:layout_width="292dp"

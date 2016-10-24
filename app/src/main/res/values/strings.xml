@@ -16,7 +16,8 @@
     <string name="registrarse">Registrarse</string>
     <string name="ingresar">Ingresar</string>
     <string name="noaccount">¿Aun no tienes cuenta?</string>
-    <string name="verpass">VER CONTRASEÑA</string>
+    <string name="verpass">Ver contraseña</string>
+    <string name="rememberme">Recordarme</string>
 
 
     <!--Presentacion-->

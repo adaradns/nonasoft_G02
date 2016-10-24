@@ -2,6 +2,7 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Login;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -12,6 +13,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -21,6 +23,7 @@ import android.widget.Toast;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.Activities.IntroductionOneActivity;
 import com.app.nonasoft.grupo2_desarrollodesoftware.Activities.SegundaActivity;
+import com.app.nonasoft.grupo2_desarrollodesoftware.MainActivity;
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
 import org.apache.http.message.BasicNameValuePair;
@@ -36,10 +39,15 @@ import java.util.List;
  */
 public class Login extends Activity implements View.OnClickListener {
 
+    String username, password;
     private EditText user, pass;
     private Button btnIngresar, btnRegistrar;
     private TextView txtName, txtPassword;
     private CheckBox showpassword;
+    private CheckBox rememberme;
+    private SharedPreferences loginPreferences;
+    private SharedPreferences.Editor loginPrefsEditor;
+    private Boolean saveLogin;
 
 
     private ProgressDialog pDialog;
@@ -83,6 +91,11 @@ public class Login extends Activity implements View.OnClickListener {
 
         // set checkbox
         showpassword = (CheckBox) findViewById(R.id.showpassword);
+        rememberme = (CheckBox)findViewById(R.id.rememberme);
+
+        //Preferences
+        loginPreferences = getSharedPreferences("loginPrefs", MODE_PRIVATE);
+        loginPrefsEditor = loginPreferences.edit();
 
         // registro listeners
         btnIngresar.setOnClickListener(this);
@@ -103,19 +116,26 @@ public class Login extends Activity implements View.OnClickListener {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     pass.setTransformationMethod(null);
-                    showpassword.setText("OCULTAR CONTRASEÑA");
+                    showpassword.setText("Ocultar contraseña");
                 }else{
-                    showpassword.setText("VER CONTRASEÑA");
+                    showpassword.setText("Ver Contraseña");
                     pass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 }
             }
         });
 
-
+        saveLogin = loginPreferences.getBoolean("saveLogin", false);
+        if (saveLogin == true) {
+            user.setText(loginPreferences.getString("username", ""));
+            pass.setText(loginPreferences.getString("password", ""));
+            rememberme.setChecked(true);
+        }
     }
 
     @Override
     public void onClick(View v) {
+
+
         // TODO Auto-generated method stub
         switch (v.getId()) {
             case R.id.login:
@@ -129,6 +149,25 @@ public class Login extends Activity implements View.OnClickListener {
             default:
                 break;
         }
+
+        if (v == btnIngresar) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(user.getWindowToken(), 0);
+
+            username = user.getText().toString();
+            password = pass.getText().toString();
+
+            if (rememberme.isChecked()) {
+                loginPrefsEditor.putBoolean("saveLogin", true);
+                loginPrefsEditor.putString("username", username);
+                loginPrefsEditor.putString("password", password);
+                loginPrefsEditor.commit();
+            } else {
+                loginPrefsEditor.clear();
+                loginPrefsEditor.commit();
+            }
+        }
+
     }
 
     class AttemptLogin extends AsyncTask<String, String, String> {
