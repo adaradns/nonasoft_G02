@@ -26,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent btnComenzar = new Intent(MainActivity.this, Login.class);
                 startActivity(btnComenzar);
+<<<<<<< HEAD
+=======
+
+                finish();
+>>>>>>> test
             }
         });
     }

@@ -16,8 +16,12 @@
     <string name="registrarse">Registrarse</string>
     <string name="ingresar">Ingresar</string>
     <string name="noaccount">¿Aun no tienes cuenta?</string>
+<<<<<<< HEAD
     <string name="verpass">Ver contraseña</string>
     <string name="rememberme">Recordarme</string>
+=======
+    <string name="verpass">VER CONTRASEÑA</string>
+>>>>>>> test
 
 
     <!--Presentacion-->

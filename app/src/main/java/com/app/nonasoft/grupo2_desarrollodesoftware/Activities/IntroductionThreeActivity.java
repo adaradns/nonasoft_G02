@@ -24,6 +24,11 @@ public class IntroductionThreeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent btnNext = new Intent(IntroductionThreeActivity.this, IntroductionFourActivity.class);
                 startActivity(btnNext);
+<<<<<<< HEAD
+=======
+
+                finish();
+>>>>>>> test
             }
         });
 

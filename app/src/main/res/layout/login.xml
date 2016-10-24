@@ -117,6 +117,7 @@
             android:layout_alignRight="@+id/login"
             android:layout_alignEnd="@+id/login" />
 
+<<<<<<< HEAD
         <CheckBox
             android:id="@+id/rememberme"
             android:layout_width="wrap_content"
@@ -127,6 +128,8 @@
             android:layout_alignLeft="@+id/login"
             android:layout_alignStart="@+id/login" />
 
+=======
+>>>>>>> test
         <Button
             android:id="@+id/registro"
             android:layout_width="292dp"

@@ -155,7 +155,11 @@ public class SegundaActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
+<<<<<<< HEAD
 
+=======
+            Intent intent = new Intent(Intent.ACTION_MAIN); finish();
+>>>>>>> test
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

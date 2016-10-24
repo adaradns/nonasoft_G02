@@ -14,14 +14,20 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import com.app.nonasoft.grupo2_desarrollodesoftware.Activities.IntroductionOneActivity;
+=======
+>>>>>>> test
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+<<<<<<< HEAD
 import java.sql.SQLException;
+=======
+>>>>>>> test
 import java.util.ArrayList;
 import java.util.List;
 
@@ -129,8 +135,11 @@ public class Register  extends Activity implements View.OnClickListener {
 
         new CreateUser().execute();
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> test
     }
 
     class CreateUser extends AsyncTask<String, String, String> {
@@ -154,14 +163,20 @@ public class Register  extends Activity implements View.OnClickListener {
             String password = pass.getText().toString();
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> test
             try {
                 // Parametros de construccion
                 List params = new ArrayList();
                 params.add(new BasicNameValuePair("username", username));
                 params.add(new BasicNameValuePair("password", password));
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> test
                 //registrar los datos del usuario
                 JSONObject json = jsonParser.makeHttpRequest(
                         REGISTER_URL, "POST", params);
@@ -193,6 +208,11 @@ public class Register  extends Activity implements View.OnClickListener {
             pDialog.dismiss();
             if (file_url != null){
                 Toast.makeText(Register.this, file_url, Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
+=======
+
+                finish();
+>>>>>>> test
             }
         }
     }
