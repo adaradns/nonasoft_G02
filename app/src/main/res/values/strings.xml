@@ -55,12 +55,16 @@
     <string name="entendido">entendido</string>
     <string name="jugar">JUGA Y EVALUATE</string>
     <string name="title_activity_segunda">SegundaActivity</string>
+    <string name="tutoriales">TUTORIALES</string>
+    <string name="minijuego">JUEGOS</string>
     
     <!--INICIAL LEVEL-->
+    <string name="niveles">NIVELES</string>
     <string name="gContacts">GESTION DE CONTACTOS</string>
     <string name="llamadas">LLAMADAS</string>
     <string name="camera">USO DE CAMARA</string>
     <string name="galeryimg">GALERIA DE IMAGENES</string>
     <string name="opcionesInicial">OPCIONES PARA JUGAR</string>
     <string name="inicialOpc">nivel inicial</string>
+
 </resources>

@@ -10,12 +10,69 @@
     tools:showIn="@layout/app_bar_segunda"
     android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnTutorial"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tutoriales"
+                android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                android:textAlignment="center"
+                android:textColor="@color/purpure"/>
+
+            <Button
+                android:id="@+id/btnJugar"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:text="@string/minijuego"
+                android:drawableLeft="@drawable/ic_casino_black_24dp"
+                android:drawablePadding="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/purpure"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="7dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/niveles"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/niveles"
+                android:textAlignment="center"
+                android:paddingTop="20dp"
+                android:textColor="@color/withe"
+                android:background="@color/purpure"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
     <TabHost
         android:id="@android:id/tabhost"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:background="@android:color/white">
+        android:layout_weight="0.19"
+        android:background="@android:color/white" android:visibility="gone">
 
         <LinearLayout
             android:orientation="vertical"
@@ -70,28 +127,106 @@
 
             </FrameLayout>
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+
+
+
         </LinearLayout>
     </TabHost>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+            android:drawablePadding="8dp"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/fuccia"
+            android:text="@string/camera" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.33"
-        android:background="@color/greymenu">
-    <Button
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:textAlignment="center"
-        android:text="@string/jugar"
-        android:textColor="@color/withe"
-        android:id="@+id/btnJugar"
-        android:focusableInTouchMode="false"
-        android:gravity="center_horizontal"
-        android:background="@color/purpure"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="5dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:id="@+id/btnGalery"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_photo_library_black_24dp"
+                android:drawablePadding="8dp"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/clearpurpure"
+                android:text="@string/galeryimg"/>
+
+        </LinearLayout>
+
+
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:id="@+id/btncalls"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_forwarded_black_24dp"
+                android:drawablePadding="8dp"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/purpure"
+                android:text="@string/llamadas"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_width="360dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_person_add_black_24dp"
+        android:drawablePadding="8dp"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/fuccia"
+        android:text="@string/gContacts" />
 </LinearLayout>

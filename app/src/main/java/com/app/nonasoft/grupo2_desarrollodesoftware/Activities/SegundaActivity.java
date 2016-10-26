@@ -2,6 +2,7 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -14,7 +15,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.LinearLayout;
 import android.widget.TabHost;
+import android.widget.TextView;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
@@ -24,12 +27,17 @@ public class SegundaActivity extends AppCompatActivity
     ExpandableListView lista_expandible_incial;
     ExpandableListView lista_expandible_intermedo;
     ExpandableListView lista_expandible_avazado;
-    private Button btnJugar;
+    private TextView niveles;
+    private Button btnTutorial, btnJugar, btnCamera, btnContacts, btnGalery, btnCalls;
+    private boolean isButtonClicked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda);
+
+        niveles = (TextView) findViewById(R.id.niveles);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -43,10 +51,15 @@ public class SegundaActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         btnJugar = (Button) findViewById(R.id.btnJugar);
+        btnTutorial = (Button) findViewById(R.id.btnTutorial);
+        btnCamera = (Button) findViewById(R.id.btnCamera);
+        btnContacts = (Button) findViewById(R.id.btnContacts);
+        btnGalery = (Button) findViewById(R.id.btnGalery);
+        btnCalls = (Button) findViewById(R.id.btncalls);
 
         //Creando las tablas "inicial" "medio" "avanzado"
         Resources res = getResources();
-        TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
+        final TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
 
         TabHost.TabSpec spec = tabs.newTabSpec("mitab1");
@@ -64,20 +77,62 @@ public class SegundaActivity extends AppCompatActivity
         spec.setIndicator("avanzado");
         tabs.addTab(spec);
         tabs.setCurrentTab(0);
+
+
         //Final de tabs
 
         //ExpandableListView
         lista_expandible_incial = (ExpandableListView) findViewById(R.id.expandableListView1);
         lista_expandible_incial.setAdapter(new AdaptadorInicial(this));
 
+
+        btnJugar.setBackgroundColor(Color.parseColor("#FFFFFF"));
+
+
+        tabs.setVisibility(View.VISIBLE);
         //Funcionalidad btnJugar
         btnJugar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent btnNext = new Intent(SegundaActivity.this, OpcionesMinijuego.class);
-                startActivity(btnNext);
+
+                if (v.getId() == R.id.btnJugar) {
+                    isButtonClicked = !isButtonClicked;
+                    btnTutorial.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                    btnJugar.setBackgroundColor(Color.parseColor("#DFDFDF"));
+                    niveles.setVisibility(View.VISIBLE);
+                    niveles.setText("OPCIONES DE JUEGO NIVEL INICIAL");
+                    tabs.setVisibility(View.GONE);
+                    btnCamera.setVisibility(View.VISIBLE);
+                    btnContacts.setVisibility(View.VISIBLE);
+                    btnGalery.setVisibility(View.VISIBLE);
+                    btnCalls.setVisibility(View.VISIBLE);
+
+                }
             }
         });
+
+
+        btnCamera.setVisibility(View.GONE);
+        btnContacts.setVisibility(View.GONE);
+        btnGalery.setVisibility(View.GONE);
+        //Funcionalidad btnTutorial
+        btnTutorial.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.btnTutorial) {
+                    isButtonClicked = !isButtonClicked;
+                    btnJugar.setBackgroundColor(Color.parseColor("#FFFFFF"));
+                    btnTutorial.setBackgroundColor(Color.parseColor("#DFDFDF"));
+                    niveles.setText("NIVELES");
+                    tabs.setVisibility(View.VISIBLE);
+                    btnCamera.setVisibility(View.GONE);
+                    btnContacts.setVisibility(View.GONE);
+                    btnGalery.setVisibility(View.GONE);
+                    btnCalls.setVisibility(View.GONE);
+                }
+            }
+        });
+
 
         lista_expandible_incial.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
@@ -119,6 +174,11 @@ public class SegundaActivity extends AppCompatActivity
                 return false;
             }
         });
+    }
+
+
+    public void ocultarElementos(){
+
     }
 
     @Override

@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#FF1993F6</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#b9d4ff</color>
+    <color name="colorAccent">#7fb0ff</color>
     <color name="lightBlue">#199DF6</color>
     <color name="blue">#007CC3</color>
     <color name="withe">#fff</color>
@@ -11,4 +11,5 @@
     <color name="greymenu">#E6E6E6</color>
     <color name="clearpurpure">#C985A3</color>
     <color name="fuccia">#DD137B</color>
+    <color name="darkgrey">#C5C5C5</color>
 </resources>
