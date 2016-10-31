@@ -67,4 +67,8 @@
     <string name="opcionesInicial">OPCIONES PARA JUGAR</string>
     <string name="inicialOpc">nivel inicial</string>
 
+    <!--About app-->
+    <string name="aboutApp">NONASOFT</string>
+    <string name="aboutAppContent">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor </string>
+    <string name="aboutAppContent1">Desarrolladores</string>
 </resources>

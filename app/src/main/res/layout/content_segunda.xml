@@ -183,7 +183,8 @@
                 android:textAlignment="textEnd"
                 android:textColor="@android:color/white"
                 android:backgroundTint="@color/clearpurpure"
-                android:text="@string/galeryimg"/>
+                android:text="@string/galeryimg"
+                android:visibility="gone"/>
 
         </LinearLayout>
 
