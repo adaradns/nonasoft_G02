@@ -14,29 +14,62 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.ExpandableListView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
-public class SegundaActivity extends AppCompatActivity
+public class MiniJuegoActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    ExpandableListView lista_expandible_incial;
-    ExpandableListView lista_expandible_intermedo;
-    ExpandableListView lista_expandible_avazado;
+    private TextView txtNiveles;
+    //Botones Superiores
+    private Button btnTutorial2, btnJugar2;
+    //Botones de los mini-juegos de los tutoriales
+        //nivel inicial
+    private Button btnInicial1;
+    private Button btnInicial2;
+    private Button btnInicial3;
+    private Button btnInicial4;
+        //nivel intermedio
+    private Button btnIntermedio1;
+    private Button btnIntermedio2;
+    private Button btnIntermedio3;
+    private Button btnIntermedio4;
+        //nivel avanzado
+    private Button btnAvanzado1;
+    private Button btnAvanzado2;
+    private Button btnAvanzado3;
 
-    private TextView niveles;
-    private Button btnTutorial, btnJugar;
-    private boolean isButtonClicked = false;
+    TabHost tabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_segunda);
-        niveles = (TextView) findViewById(R.id.niveles);
+        setContentView(R.layout.activity_mini_juego);
 
+        txtNiveles = (TextView) findViewById(R.id.txtNiveles);
+
+        btnTutorial2 = (Button) findViewById(R.id.btnTutorialJuego);
+        btnJugar2 = (Button) findViewById(R.id.btnJugarJuego);
+
+        btnInicial1 = (Button) findViewById(R.id.btnInicial1);
+        btnInicial2 = (Button) findViewById(R.id.btnInicial2);
+        btnInicial3 = (Button) findViewById(R.id.btnInicial3);
+        btnInicial4 = (Button) findViewById(R.id.btnInicial4);
+
+        btnIntermedio1 = (Button) findViewById(R.id.btnIntermedio1);
+        btnIntermedio2 = (Button) findViewById(R.id.btnIntermedio2);
+        btnIntermedio3 = (Button) findViewById(R.id.btnIntermedio3);
+        btnIntermedio4 = (Button) findViewById(R.id.btnIntermedio4);
+
+        btnAvanzado1 = (Button) findViewById(R.id.btnAvanzado1);
+        btnAvanzado2 = (Button) findViewById(R.id.btnAvanzado2);
+        btnAvanzado3 = (Button) findViewById(R.id.btnAvanzado3);
+
+        btnTutorial2.setBackgroundColor(Color.parseColor("#FFFFFF"));
+
+        //-------------------------NAVEGATION DRAWER
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -48,109 +81,85 @@ public class SegundaActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        //-------------------------NAVEGATION DRAWER
 
-        btnJugar = (Button) findViewById(R.id.btnJugar);
-        btnTutorial = (Button) findViewById(R.id.btnTutorial);
+
 
         //Creando las tablas "inicial" "medio" "avanzado"
         Resources res = getResources();
-        final TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
+        tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
 
-        TabHost.TabSpec spec = tabs.newTabSpec("mitab1");
-        spec.setContent(R.id.inicial);
+        TabHost.TabSpec spec = tabs.newTabSpec("juegotab1");
+        spec.setContent(R.id.juegoInicial);
         spec.setIndicator("inicial");
         tabs.addTab(spec);
 
-        spec = tabs.newTabSpec("mitab2");
-        spec.setContent(R.id.intermedio);
+        spec = tabs.newTabSpec("juegotab2");
+        spec.setContent(R.id.juegoIntermedio);
         spec.setIndicator("medio");
         tabs.addTab(spec);
 
-        spec = tabs.newTabSpec("mitab3");
-        spec.setContent(R.id.avanzado);
+        spec = tabs.newTabSpec("juegotab3");
+        spec.setContent(R.id.juegoAvanzado);
         spec.setIndicator("avanzado");
         tabs.addTab(spec);
         tabs.setCurrentTab(0);
+        //------------ fin las tablas "inicial" "medio" "avanzado"
 
-        niveles.setText("TUTORIAL: Inicial");
-        niveles.setBackgroundColor(Color.parseColor("#007CC3"));
-        niveles.setTextColor(Color.parseColor("#ffffff"));
+        txtNiveles.setText("JUEGO: Inicial");
+
         //-----TABS/LISTENER-------
         tabs.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {
-                if ("mitab1".equals(tabId)){
-                    niveles.setText("TUTORIAL: Inicial");
+                if ("juegotab1".equals(tabId)){
+                    txtNiveles.setText("JUEGO: Inicial");
                 }
-                if ("mitab2".equals(tabId)){
-                    niveles.setText("TUTORIAL: Intermedio");
+                if ("juegotab2".equals(tabId)){
+                    txtNiveles.setText("JUEGO: Intermedio");
                 }
-                if ("mitab3".equals(tabId)){
-                    niveles.setText("TUTORIAL: Avanzado");
+                if ("juegotab3".equals(tabId)){
+                    txtNiveles.setText("JUEGO: Avanzado");
                 }
             }
         });
         //-----TABS/LISTENER-------
 
-        //Final de tab
-        btnJugar.setBackgroundColor(Color.parseColor("#FFFFFF"));
-
-        tabs.setVisibility(View.VISIBLE);
-        //Funcionalidad btnJugar
-        btnJugar.setOnClickListener(new View.OnClickListener(){
+        //Funcionalidad btnTutorial2
+        btnTutorial2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SegundaActivity.this, MiniJuegoActivity.class);
+                Intent intent = new Intent(MiniJuegoActivity.this, SegundaActivity.class);
                 startActivity(intent);
             }
         });
 
-        //ExpandableListView
-        lista_expandible_incial = (ExpandableListView) findViewById(R.id.expandableListView1);
-        lista_expandible_incial.setAdapter(new AdaptadorInicial(this));
 
-        lista_expandible_incial.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+        //IR A MINI JUEGO DE TODAS LAS CATEGORIAS
+            //INICIAL
+        btnInicial1.setOnClickListener(new View.OnClickListener(){
             @Override
-            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                String eleccion = AdaptadorInicial.tutoriales_inicial[groupPosition][childPosition];
-                Intent intent = new Intent(SegundaActivity.this, TutorialActivity.class);
+            public void onClick(View v) {
+                String eleccion = "btnInicial1";
+                Intent intent = new Intent(MiniJuegoActivity.this, Juego.class);
                 intent.putExtra("ELECCION", eleccion);
+
                 startActivity(intent);
-                return false;
             }
         });
-
-
-        lista_expandible_intermedo = (ExpandableListView) findViewById(R.id.expandableListView2);
-        lista_expandible_intermedo.setAdapter(new AdaptadorIntermedio(this));
-
-        lista_expandible_intermedo.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+        btnInicial2.setOnClickListener(new View.OnClickListener(){
             @Override
-            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                String eleccion = AdaptadorIntermedio.tutoriales_intermedio[groupPosition][childPosition];
-                Intent intent = new Intent(SegundaActivity.this, TutorialActivity.class);
+            public void onClick(View v) {
+                String eleccion = "btnInicial2";
+                Intent intent = new Intent(MiniJuegoActivity.this, Juego.class);
                 intent.putExtra("ELECCION", eleccion);
+
                 startActivity(intent);
-                return false;
-            }
-        });
-
-
-        lista_expandible_avazado = (ExpandableListView) findViewById(R.id.expandableListView3);
-        lista_expandible_avazado.setAdapter(new AdaptadorAvanzado(this));
-
-        lista_expandible_avazado.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
-            @Override
-            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-                String eleccion = AdaptadorAvanzado.tutoriales_avanzado[groupPosition][childPosition];
-                Intent intent = new Intent(SegundaActivity.this, TutorialActivity.class);
-                intent.putExtra("ELECCION", eleccion);
-                startActivity(intent);
-                return false;
             }
         });
     }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -164,7 +173,7 @@ public class SegundaActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.segunda, menu);
+        getMenuInflater().inflate(R.menu.mini_juego, menu);
         return true;
     }
 
@@ -189,9 +198,9 @@ public class SegundaActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_logro) {
+        if (id == R.id.nav_logro1) {
             // Handle the camera action
-        } else if (id == R.id.nav_salir) {
+        } else if (id == R.id.nav_salir1) {
             Intent intent = new Intent(Intent.ACTION_MAIN);
             finish();
         }

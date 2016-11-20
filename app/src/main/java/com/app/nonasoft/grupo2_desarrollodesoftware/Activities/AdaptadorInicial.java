@@ -2,50 +2,36 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import com.app.nonasoft.grupo2_desarrollodesoftware.Parsers.CategoriesGet;
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by Yoel on 10/09/2016.
  */
 public class AdaptadorInicial extends BaseExpandableListAdapter{
     Context contexto;
-    //String[] padrea_inicial = {"getion de llamadas", "gestion de contactos", "galeria de imagenes", "mensajes de texto"};
-    List<String> padrea_inicial = new ArrayList<String>();;
+
+    static String[] padrea_inicial = {"Configuracion basica del celular", "llamadas y contactos", "Galeria de imagenes","Mensaje de texto"};
 
     static String[][] tutoriales_inicial = {
             {"Agregar contacto", "Eliminar contacto", "Buscar contacto"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
+            {"Atender llamada", "Realizar llamadas", "Ver registros"},
+            {"Acceder a la galeria", "Ver imagenes", "Eliminar imagenes"},
+            {"Acceder", "Enviar mensajes", "ingresar a mensajes"}
     };
 
 
-    public AdaptadorInicial(Context context, List<String> listaCategoriaInicial){
-        this.contexto = context;
-        Log.d("MI ELEM: ", listaCategoriaInicial.get(0));
-        for(int i = 0; i < listaCategoriaInicial.size(); i++){
-            padrea_inicial.add(listaCategoriaInicial.get(i));
-        }
-    }
+    public AdaptadorInicial(Context context){
+        this.contexto = context;}
 
     @Override
     public int getGroupCount() {
-        return padrea_inicial.size();
+        return padrea_inicial.length;
     }
 
     @Override
@@ -83,7 +69,11 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
         //Con esto "inflate" "hereda" la estructura del layout "group_item.xml"
         View inflate = View.inflate(contexto, R.layout.list_group, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tvPadre);
-        tv.setText(padrea_inicial.get(groupPosition));
+
+        tv.setText(padrea_inicial[groupPosition]);
+
+        tv.setBackgroundColor(Color.parseColor("#75C5F0"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
 
         return inflate;
     }
@@ -94,6 +84,8 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
         View inflate = View.inflate(contexto, R.layout.list_item, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tvHijo);
         tv.setText(tutoriales_inicial[groupPosition][childPosition]);
+
+
 
         return inflate;
     }

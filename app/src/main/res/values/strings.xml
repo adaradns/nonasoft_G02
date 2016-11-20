@@ -21,13 +21,11 @@
     <string name="rememberme">Recordarme</string>
 
 
-
-
     <!--Presentacion-->
     <string name="presentacion">Nonasoft es una aplicacion que te ayudara, mediante tutoriales didacticos, aprender el manejo basico de tu celular.</string>
 
 
-    <string name="Nonasoft">Nonasoft</string>
+    <string name="Nonasoft">NonaSoft</string>
     <string name="title_activity_navigation">navigation</string>
     <string name="bienvenida">Bienvenido</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -57,13 +55,29 @@
     <string name="title_activity_segunda">SegundaActivity</string>
     <string name="tutoriales">TUTORIALES</string>
     <string name="minijuego">JUEGOS</string>
-    
+
     <!--INICIAL LEVEL-->
+    <string name="inicial1">CONFIGURACION BASICA DEL CELULAR</string>
+    <string name="inicial2">LLAMADAS Y CONTACTOS</string>
+    <string name="inicial3">GALERIA DE IMAGENES</string>
+    <string name="inicial4">MENSAJES DE TEXTO</string>
     <string name="niveles">NIVELES</string>
     <string name="gContacts">GESTION DE CONTACTOS</string>
     <string name="llamadas">LLAMADAS</string>
     <string name="camera">USO DE CAMARA</string>
-    <string name="galeryimg">GALERIA DE IMAGENES</string>
+
+    <!--INTERMEDIO LEVEL-->
+    <string name="intermedio1">REDES SOCIALES</string>
+    <string name="intermedio2">MUSICA/RADIO</string>
+    <string name="intermedio3">DESCARGA DE APLICACIONES</string>
+    <string name="intermedio4">APLICACIONES UTILES</string>
+
+    <!--AVANZADO LEVEL-->
+    <string name="avanzado1">CORREO ELECTRONICO</string>
+    <string name="avanzado2">CONFIGURACION AVANZADA DEL CELULAR</string>
+    <string name="avanzado3">NAVEGAR POR INTERNET</string>
+
+
     <string name="opcionesInicial">OPCIONES PARA JUGAR</string>
     <string name="inicialOpc">nivel inicial</string>
 
@@ -71,4 +85,11 @@
     <string name="aboutApp">NONASOFT</string>
     <string name="aboutAppContent">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor </string>
     <string name="aboutAppContent1">Desarrolladores</string>
+    <string name="title_activity_mini_juego">MiniJuegoActivity</string>
+    <string name="opciones">Opciones</string>
+    <string name="logros">Logros de usuario</string>
+    <string name="salir">salir</string>
+    <string name="condiciones">Terminos y condiciones</string>
+
+
 </resources>

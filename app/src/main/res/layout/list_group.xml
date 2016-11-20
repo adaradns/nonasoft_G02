@@ -11,6 +11,7 @@
         android:textSize="22dp"
         android:paddingLeft="40dp"
         android:background="#E6E6E6"
+        android:drawableRight="@android:drawable/btn_star_big_off"
         />
 
 </LinearLayout>

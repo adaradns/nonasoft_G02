@@ -12,4 +12,8 @@
     <color name="clearpurpure">#C985A3</color>
     <color name="fuccia">#DD137B</color>
     <color name="darkgrey">#C5C5C5</color>
+    <color name="black">#000</color>
+
+    <color name="purpure2">#FFCE5C9A</color>
+    <color name="black1">#FF131313</color>
 </resources>

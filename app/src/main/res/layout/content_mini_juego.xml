@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.nonasoft.grupo2_desarrollodesoftware.Activities.MiniJuegoActivity"
+    tools:showIn="@layout/app_bar_mini_juego"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTutorialJuego"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/tutoriales"
+            android:drawableLeft="@drawable/ic_library_books_black_24dp"
+            android:textAlignment="center"
+            android:textColor="@color/purpure"/>
+
+        <Button
+            android:id="@+id/btnJugarJuego"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/minijuego"
+            android:drawableLeft="@drawable/ic_casino_black_24dp"
+            android:drawablePadding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/purpure"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNiveles"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/withe"
+        android:background="@color/purpure"
+        android:textSize="22dp"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabcontent">
+
+                <LinearLayout
+                    android:id="@+id/juegoInicial"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnInicial1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_menu_manage"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/inicial1"
+                        android:layout_marginBottom="10px" />
+
+                    <Button
+                        android:id="@+id/btnInicial2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_person_add_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/inicial2"
+                        android:layout_marginBottom="10px"/>
+
+                    <Button
+                        android:id="@+id/btnInicial3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_photo_library_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/inicial3"
+                        android:layout_marginBottom="10px"/>
+
+                    <Button
+                        android:id="@+id/btnInicial4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/ic_dialog_email"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/inicial4"
+                        android:layout_marginBottom="10px"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/juegoIntermedio"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnIntermedio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/ic_menu_send"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio1"
+                        android:layout_marginBottom="10px" />
+
+                    <Button
+                        android:id="@+id/btnIntermedio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_menu_slideshow"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio2"
+                        android:layout_marginBottom="10px"/>
+
+                    <Button
+                        android:id="@+id/btnIntermedio3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/sym_def_app_icon"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio3"
+                        android:layout_marginBottom="10px"/>
+
+                    <Button
+                        android:id="@+id/btnIntermedio4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/sym_def_app_icon"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio4"
+                        android:layout_marginBottom="10px"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/juegoAvanzado"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnAvanzado1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/ic_dialog_email"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/avanzado1"
+                        android:layout_marginBottom="10px" />
+
+                    <Button
+                        android:id="@+id/btnAvanzado2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/ic_menu_manage"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/avanzado2"
+                        android:layout_marginBottom="10px"/>
+
+                    <Button
+                        android:id="@+id/btnAvanzado3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/ic_menu_view"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/avanzado3"
+                        android:layout_marginBottom="10px"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

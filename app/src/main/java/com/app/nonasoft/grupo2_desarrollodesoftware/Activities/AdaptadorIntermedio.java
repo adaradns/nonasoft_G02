@@ -2,6 +2,7 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
@@ -11,12 +12,15 @@ import android.widget.TextView;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Yoel on 10/09/2016.
  */
 public class AdaptadorIntermedio extends BaseExpandableListAdapter {
     Context contexto;
-    String[] padre_intermedio= {"Descargar Aplicaciones", "Uso de redes sociales", "Musica/Radio", "Accesorios"};
+    static String[] padre_intermedio = {"redes sociales", "Musica/Radio", "Descarga de aplicaciones","aplicaciones utiles"    };
 
     static String[][] tutoriales_intermedio= {
             {"Agregar tutorial"},
