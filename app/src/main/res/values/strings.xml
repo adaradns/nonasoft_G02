@@ -21,13 +21,11 @@
     <string name="rememberme">Recordarme</string>
 
 
-
-
     <!--Presentacion-->
     <string name="presentacion">Nonasoft es una aplicacion que te ayudara, mediante tutoriales didacticos, aprender el manejo basico de tu celular.</string>
 
 
-    <string name="Nonasoft">Nonasoft</string>
+    <string name="Nonasoft">NonaSoft</string>
     <string name="title_activity_navigation">navigation</string>
     <string name="bienvenida">Bienvenido</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -57,18 +55,69 @@
     <string name="title_activity_segunda">SegundaActivity</string>
     <string name="tutoriales">TUTORIALES</string>
     <string name="minijuego">JUEGOS</string>
-    
+
     <!--INICIAL LEVEL-->
+    <string name="inicial1">CONFIGURACION/ USO INICIAL</string>
+    <string name="inicial2">MANEJO DE CONTACTOS</string>
+    <string name="inicial3">GESTION DE LLAMADAS/SMS</string>
+    <string name="inicial4">MENSAJES DE TEXTO</string>
     <string name="niveles">NIVELES</string>
     <string name="gContacts">GESTION DE CONTACTOS</string>
     <string name="llamadas">LLAMADAS</string>
     <string name="camera">USO DE CAMARA</string>
-    <string name="galeryimg">GALERIA DE IMAGENES</string>
-    <string name="opcionesInicial">OPCIONES PARA JUGAR</string>
-    <string name="inicialOpc">nivel inicial</string>
 
+    <!--INTERMEDIO LEVEL-->
+    <string name="intermedio1">APLICACIONES UTILES</string>
+    <string name="intermedio2">REDES SOCIALES</string>
+    <string name="intermedio3">USO DE REDES SOCIALES</string>
+
+    <!--AVANZADO LEVEL-->
+    <string name="avanzado1">CORREO ELECTRONICO</string>
+    <string name="avanzado2">CONFIGURACION AVANZADA</string>
+    <string name="avanzado3">NAVEGAR POR INTERNET</string>
+
+
+    <!--JUEGO-->
+    <string name="txtLogro">LOGRO:</string>
+    <string name="txtCorrectas">CORRECTAS</string>
     <!--About app-->
-    <string name="aboutApp">NONASOFT</string>
-    <string name="aboutAppContent">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor </string>
-    <string name="aboutAppContent1">Desarrolladores</string>
+    <string name="aboutAppterminos">TERMINOS Y CONDICIONES</string>
+    <string name="aboutAppContentTerminos">
+        Mediante el acceso y uso de esta aplicación, aceptas los términos de servicio de NonaSoft. En caso de no aceptar alguna de las condiciones en los términos de servicio, por favor no continúe usando la aplicación.
+
+
+Los contenidos de Nonasoft son de carácter informativo y referencial, tienen el objetivo de ayudar a los usuarios a comprender el funcionamiento de aplicaciones y sitios web que no tienen relación con Nonasoft. Nonasoft no será responsable por cualquier inexactitud, utilidad o disponibilidad en el contenido de la aplicación.
+NonaSoft no se responsabiliza por el uso de aplicaciones, sitios web, o cualquier contenido de terceros referenciado en esta aplicación.
+NonaSoft se guarda el dereho de eliminar, agregar o modificar información contenida en la aplicación en cualquier momento.
+
+
+El usuario no puede modificar, copiar, reproducir, cargar, publicar, transmitir o distribuir el contenido de Nonasoft con fines comerciales.
+    </string>
+
+    <string name="aboutApptTitle">ACERCA DE LA APLICACION</string>
+    <string name="aboutAppContent">NonaSoft es una aplicación nacida de una necesidad muy común (en especial en usuarios de la tercera edad) de tener información confiable y fácil de comprender a tu alcance, a la hora de aprender a usar redes sociales y otras aplicaciones esenciales en la vida cotidiana de hoy.
+Nuestro objetivo es proveer una plataforma en la que puedas encontrar la información que necesites para aprender el uso básico de estas aplicaciones y puedas disfrutar de su utilidad sin perder tiempo o tener que recurrir a alguien que te ayude.
+Queremos darte independencia a la hora de avanzar por nuevos caminos y superar sus obstáculos, y fomentar ese espíritu aventurero de lanzarse hacia nuevas fronteras. NonaSoft es nuestra manera de acompañarte y darte la ayuda que necesites para seguir aprendiendo, y esperamos facilitar tu experiencia de la mejor manera posible.
+</string>
+    <string name="aboutAppContent1">DESARROLLADORES</string>
+    <string name="aquino">Aquino Sergio</string>
+    <string name="atencio">Atencio Ezequiel</string>
+    <string name="castillo">Castillo Nicolas</string>
+    <string name="denis">Denis Adara</string>
+    <string name="enriquez">Enriquez Yoel</string>
+    <string name="niesi">Niesi Tomas</string>
+    <string name="vega">Vega Laura</string>
+
+    <!--MINIJUEGO-->
+    <string name="title_activity_mini_juego">MiniJuegoActivity</string>
+    <string name="opciones">Opciones</string>
+    <string name="logros">Logros de usuario</string>
+    <string name="salir">salir</string>
+    <string name="condiciones">Acerca de la aplicacion</string>
+
+    <!--logros.xml-->
+    <string name="nivelInicial">NIVEL INCIAL</string>
+    <string name="nivelIntermedio">NIVEL INTERMEDIO</string>
+    <string name="nivelAvanzado">NIVEL AVANZADO</string>
+
 </resources>

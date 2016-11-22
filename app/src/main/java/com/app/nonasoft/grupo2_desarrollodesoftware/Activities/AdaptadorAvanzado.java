@@ -2,6 +2,8 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
@@ -11,22 +13,33 @@ import android.widget.TextView;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Yoel on 10/09/2016.
  */
 public class AdaptadorAvanzado extends BaseExpandableListAdapter {
     Context contexto;
-    String[] padre_avanzado= {"Navegar por internet", "Configuracion del celular", "Correo electronico", "Noticias"};
+    static String[] padre_avanzado = {"CORREO ELECTRONICO", "CONFIGURACION AVANZADA","NAVEGAR POR INTERNET"};
 
     static String[][] tutoriales_avanzado= {
-            {"Agregar tutorial"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"}
+            {"Gmail: Bandeja, envio, adjuntar","Hotmail: Bandeja, envio, adjuntar","Exchange: Bandeja, envio, adjuntar"},
+            {"Control de datos moviles","Conexión compartida", "Configuracion antirrobo"},
+            {"Engaño y paginas falsas", "Configurar buscador y pagina inicio", "Historial de navegación"}
     };
+
+    static String[][] tutoriales_avanzado_generico = {
+            {"avanzado_categoria1_tut1", "avanzado_categoria1_tut2", "avanzado_categoria1_tut3"},
+            {"avanzado_categoria2_tut1", "avanzado_categoria2_tut2", "avanzado_categoria2_tut3"},
+            {"avanzado_categoria3_tut1", "avanzado_categoria3_tut2", "avanzado_categoria3_tut3"}
+    };
+
+    private Typeface tf;
 
     public AdaptadorAvanzado(Context context){
         this.contexto = context;
+        this.tf = Typeface.createFromAsset(context.getAssets(), "fonts/century-gothic.ttf");
     }
 
     @Override
@@ -71,6 +84,10 @@ public class AdaptadorAvanzado extends BaseExpandableListAdapter {
         TextView tv = (TextView) inflate.findViewById(R.id.tvPadre);
         tv.setText(padre_avanzado[groupPosition]);
 
+        tv.setTypeface(tf);
+        tv.setBackgroundColor(Color.parseColor("#974578"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+
         return inflate;
     }
 
@@ -80,6 +97,10 @@ public class AdaptadorAvanzado extends BaseExpandableListAdapter {
         View inflate = View.inflate(contexto, R.layout.list_item, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tvHijo);
         tv.setText(tutoriales_avanzado[groupPosition][childPosition]);
+
+        tv.setBackgroundColor(Color.parseColor("#DD137B"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+        tv.setTypeface(tf);
 
         return inflate;
     }

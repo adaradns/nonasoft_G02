@@ -3,21 +3,13 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Perfil de usuario" />
+            android:id="@+id/nav_logro"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="@string/logros" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Opciones de idioma" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Opciones de silencio" />
-        <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_salir"
             android:icon="@drawable/ic_menu_send"
-            android:title="Salir" />
+            android:title="@string/salir" />
 
 
 

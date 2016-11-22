@@ -1,61 +1,131 @@
 package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
+
 import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.*;
-import android.widget.TextView;
-
+import android.widget.ImageView;
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
 public class TutorialActivity extends AppCompatActivity {
     private String election;
-
-    TextView titulo;
-    TextView paso1;
-    TextView paso2;
-    TextView paso3;
-
     private Toolbar toolbar;
+    private pl.droidsonroids.gif.GifImageView gif;
+    private ImageView btns;
+
+    private boolean isButtonClicked = false;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
 
+        //gif = (pl.droidsonroids.gif.GifImageView) findViewById(R.id.anim);
+        btns = (ImageView) findViewById(R.id.btns);
+
         //creando toolbar
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
+
         //para poner boton atras
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        titulo = (TextView) findViewById(R.id.textViewTitulo);
-        paso1 = (TextView) findViewById(R.id.textViewPaso1);
-        paso2 = (TextView) findViewById(R.id.textViewPaso2);
-        paso3 = (TextView) findViewById(R.id.textViewPaso3);
+
+
 
         //Capturando la opcion elegida
         Intent intent = getIntent();
         Bundle extra = intent.getExtras();
-        if(extra != null){
+        if(extra != null) {
             election = extra.getString("ELECCION");
+            Log.d("Eleccion:", election);
+            //NIVEL INICIAL
+            //categoria 1
+            if (election.equals("inicial_categoria1_tut1")) {
+                btns.setImageResource(R.drawable.btn1);
+
+            } else if (election.equals("inicial_categoria1_tut2")) {
+                btns.setImageResource(R.drawable.btn2);
+            } else if (election.equals("inicial_categoria1_tut3")) {
+                btns.setImageResource(R.drawable.btn3);
+            }
+            //categoria 2
+            else if (election.equals("inicial_categoria2_tut1")) {
+                btns.setImageResource(R.drawable.btn4);
+            } else if (election.equals("inicial_categoria2_tut2")) {
+                btns.setImageResource(R.drawable.btn5);
+            } else if (election.equals("inicial_categoria2_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+            //categoria 3
+            else if (election.equals("inicial_categoria3_tut1")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("inicial_categoria3_tut2")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("inicial_categoria3_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("inicial_categoria3_tut4")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+            //NIVEL INTERMEDIO
+            //categoria 1
+            else if (election.equals("intermedio_categoria1_tut1")) {
+                //gif.setImageResource(R.drawable.gifprueba);
+            } else if (election.equals("intermedio_categoria1_tut2")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("intermedio_categoria1_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+            //categoria 2
+            else if (election.equals("intermedio_categoria2_tut1")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("intermedio_categoria2_tut2")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("intermedio_categoria2_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+            //categoria 3
+            else if (election.equals("intermedio_categoria3_tut1")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("intermedio_categoria3_tut2")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("intermedio_categoria3_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+            //NIVEL AVANzADO
+            //categoria 1
+            else if (election.equals("avanzado_categoria1_tut1")) {
+                //gif.setImageResource(R.drawable.gifprueba);
+            } else if (election.equals("avanzado_categoria1_tut2")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("avanzado_categoria1_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+            //categoria 2
+            else if (election.equals("avanzado_categoria2_tut1")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("avanzado_categoria2_tut2")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("avanzado_categoria2_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+            //categoria 3
+            else if (election.equals("avanzado_categoria3_tut1")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("avanzado_categoria3_tut2")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            } else if (election.equals("avanzado_categoria3_tut3")) {
+                //gif.setImageResource(R.drawable.gifprueba1);
+            }
+
         }
-        //coloco el contenido de los tutoriales
-        if(election.equals("Agregar contacto")){
-            paso1.setText("1- Debe dirigirse al menu del celular");
-            paso2.setText("2- Buscar el icono de contactos");
-            paso3.setText("3- Se abrira la agenda de contactos, ahora precione el boton para agregar un nuevo contacto");
-        }
-        else{
-            paso1.setText("1- Hace tal cosa para el paso");
-            paso2.setText("2- Hacer N cosa para seguir");
-            paso3.setText("3- Hacer tal cosa ... ¡Y todo eso!");
-        }
-        //Coloco el contenido de los tutoriales
-        titulo.setText(election);
     }
     @Override public boolean onCreateOptionsMenu(android.view.Menu mimenu){
         getMenuInflater().inflate(R.menu.menu_tutorial, mimenu);
