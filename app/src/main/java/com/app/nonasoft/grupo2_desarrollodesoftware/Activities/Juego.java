@@ -2,12 +2,17 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Intent;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+=======
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,6 +32,7 @@ public class Juego extends AppCompatActivity {
     private Button btnOpcion_3;
     private Button btnOpcion_4;
 
+<<<<<<< HEAD
     private TextView txtPuntaje;
 
     private String election;
@@ -36,12 +42,21 @@ public class Juego extends AppCompatActivity {
     private boolean isButtonClicked = false;
     private ImageView imgCorrecto;
     private ImageView imgIncorrecto;
+=======
+    private String election;
+
+
+
+    private boolean isButtonClicked = false;
+    private ImageView imgCorrecto;
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_juego_opciones);
 
+<<<<<<< HEAD
         //creando toolbar
         toolbar = (Toolbar) findViewById(R.id.tool_bar1);
         setSupportActionBar(toolbar);
@@ -71,6 +86,26 @@ public class Juego extends AppCompatActivity {
         btnOpcion_2.setTypeface(tf);
         btnOpcion_3.setTypeface(tf);
         btnOpcion_4.setTypeface(tf);
+=======
+        pregunta = (TextView) findViewById(R.id.txtPregunta);
+
+        btnOpcion_1 = (Button) findViewById(R.id.btnFacebook);
+        btnOpcion_2 = (Button) findViewById(R.id.btnTwitter);
+        btnOpcion_3 = (Button) findViewById(R.id.btnWhatsapp);
+        btnOpcion_4 = (Button) findViewById(R.id.btnInstagram);
+
+        imgCorrecto = (ImageView) findViewById(R.id.imgCorrecto);
+
+        btnOpcion_4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.btnInstagram) {
+                    isButtonClicked = !isButtonClicked;
+                    imgCorrecto.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
         //capturando eleccion
         Intent intent = getIntent();
@@ -78,6 +113,7 @@ public class Juego extends AppCompatActivity {
         if(extra != null){
             election = extra.getString("ELECCION");
         }
+<<<<<<< HEAD
 
         //NIVEL INICIAL
         //coloco el contenido de los minijuegos
@@ -799,5 +835,30 @@ public class Juego extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(opcion_menu);
+=======
+        //coloco el contenido de los minijuegos
+        if(election.equals("btnInicial1")){
+            pregunta.setText("¿Cual red social se utiliza solo para subir " +
+                    "imagenes y videos?");
+
+            btnOpcion_1.setText("facebook");
+            btnOpcion_2.setText("gmail");
+            btnOpcion_3.setText("twitter");
+            btnOpcion_4.setText("instagram");
+
+            if(election.equals("instagram")){}
+        }
+        //coloco el contenido de los minijuegos
+        if(election.equals("btnInicial2")){
+            pregunta.setText("¿Cual red social se utiliza solo para subir " +
+                    "imagenes y videos?");
+
+            btnOpcion_1.setText("facebookasda");
+            btnOpcion_2.setText("gmaiasdal");
+            btnOpcion_3.setText("twittasdasder");
+            btnOpcion_4.setText("instagasdasdram");
+        }
+
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
     }
 }

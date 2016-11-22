@@ -33,6 +33,10 @@
             android:layout_weight="1"
             android:text="@string/minijuego"
             android:drawableLeft="@drawable/ic_casino_black_24dp"
+<<<<<<< HEAD
+=======
+            android:drawablePadding="8dp"
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
             android:textAlignment="center"
             android:textColor="@color/purpure"/>
     </LinearLayout>

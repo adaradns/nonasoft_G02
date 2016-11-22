@@ -2,8 +2,11 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
 import android.util.Log;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
@@ -17,14 +20,21 @@ import com.app.nonasoft.grupo2_desarrollodesoftware.R;
  */
 public class AdaptadorInicial extends BaseExpandableListAdapter{
     Context contexto;
+<<<<<<< HEAD
     //CONTENIDO DEL NIVEL INICIAL
     //Definiendo las categorias
     static String[] padrea_inicial = {"CONFIGURACION / USO INICIAL", "MANEJO DE CONTACTOS",
             "GESTION DE LLAMADAS / SMS"};
     //Definiendo los tutoriales de cada categoria
+=======
+
+    static String[] padrea_inicial = {"Configuracion basica del celular", "llamadas y contactos", "Galeria de imagenes","Mensaje de texto"};
+
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
     static String[][] tutoriales_inicial = {
             {"Loguear o crear cuenta Google", "Buscar y bajar aplicaciones", "Barra superior deslizante"},
             {"Agregar contacto", "Eliminar contacto", "Buscar contacto"},
+<<<<<<< HEAD
             {"Realizar llamada", "Atender llamada", "Enviar SMS", "Ver registro"}
     };
     //Defiendo la estructura generica de los tutoriales
@@ -34,10 +44,16 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
             {"inicial_categoria1_tut1", "inicial_categoria1_tut2", "inicial_categoria1_tut3"},
             {"inicial_categoria2_tut1", "inicial_categoria2_tut2", "inicial_categoria2_tut3"},
             {"inicial_categoria3_tut1", "inicial_categoria3_tut2", "inicial_categoria3_tut3", "inicial_categoria3_tut4"}
+=======
+            {"Atender llamada", "Realizar llamadas", "Ver registros"},
+            {"Acceder a la galeria", "Ver imagenes", "Eliminar imagenes"},
+            {"Acceder", "Enviar mensajes", "ingresar a mensajes"}
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
     };
 
     private Typeface tf;
 
+<<<<<<< HEAD
     private int punto;
 
     public AdaptadorInicial(Context context){
@@ -45,6 +61,10 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
         this.tf = Typeface.createFromAsset(context.getAssets(), "fonts/century-gothic.ttf");
         this.punto = 0;
     }
+=======
+    public AdaptadorInicial(Context context){
+        this.contexto = context;}
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
     @Override
     public int getGroupCount() {
@@ -86,6 +106,7 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
         //Con esto "inflate" "hereda" la estructura del layout "group_item.xml"
         View inflate = View.inflate(contexto, R.layout.list_group, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tvPadre);
+<<<<<<< HEAD
         tv.setText(padrea_inicial[groupPosition]);
         tv.setBackgroundColor(Color.parseColor("#FFCE5C9A"));
         tv.setTextColor(Color.parseColor("#ffffff"));
@@ -107,6 +128,13 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
 
 
 
+=======
+
+        tv.setText(padrea_inicial[groupPosition]);
+
+        tv.setBackgroundColor(Color.parseColor("#75C5F0"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
         return inflate;
     }
@@ -118,9 +146,13 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
         TextView tv = (TextView) inflate.findViewById(R.id.tvHijo);
         tv.setText(tutoriales_inicial[groupPosition][childPosition]);
 
+<<<<<<< HEAD
         tv.setBackgroundColor(Color.parseColor("#FFF500"));
         tv.setTextColor(Color.parseColor("#000000"));
         tv.setTypeface(tf);
+=======
+
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
         return inflate;
     }

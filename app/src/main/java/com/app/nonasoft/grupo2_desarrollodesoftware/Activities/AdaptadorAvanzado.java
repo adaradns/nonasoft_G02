@@ -2,7 +2,10 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +24,11 @@ import java.util.List;
  */
 public class AdaptadorAvanzado extends BaseExpandableListAdapter {
     Context contexto;
+<<<<<<< HEAD
     static String[] padre_avanzado = {"CORREO ELECTRONICO", "CONFIGURACION AVANZADA","NAVEGAR POR INTERNET"};
+=======
+    static String[] padre_avanzado = {"Correo electronico", "Configuracion avanzada del celular","Navegar por internet"};
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
     static String[][] tutoriales_avanzado= {
             {"Gmail: Bandeja, envio, adjuntar","Hotmail: Bandeja, envio, adjuntar","Exchange: Bandeja, envio, adjuntar"},

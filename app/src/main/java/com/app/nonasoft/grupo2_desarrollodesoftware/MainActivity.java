@@ -2,7 +2,10 @@ package com.app.nonasoft.grupo2_desarrollodesoftware;
 
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.os.Handler;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;

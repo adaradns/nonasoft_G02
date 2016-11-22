@@ -43,9 +43,12 @@
         <activity android:name=".Activities.IntroductionThreeActivity" />
         <activity android:name=".Activities.IntroductionFourActivity" />
         <activity android:name=".Activities.Juego" />
+<<<<<<< HEAD
         <activity android:name=".Activities.Terminos"></activity>
         <activity android:name=".Activities.LogrosActivity"></activity>
         <activity android:name=".Activities.VideoActivity"></activity>
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
         <activity
             android:name=".Activities.SegundaActivity"
             android:label="@string/title_activity_segunda"

@@ -2,7 +2,10 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +24,11 @@ import java.util.List;
  */
 public class AdaptadorIntermedio extends BaseExpandableListAdapter {
     Context contexto;
+<<<<<<< HEAD
     static String[] padre_intermedio = {"APLICACIONES UTILES", "REDES SOCIALES", "USO DE REDES SOCIALES"};
+=======
+    static String[] padre_intermedio = {"redes sociales", "Musica/Radio", "Descarga de aplicaciones","aplicaciones utiles"    };
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
     static String[][] tutoriales_intermedio= {
             {"Google maps", "Notas", "Google fotos"},

@@ -13,6 +13,7 @@
 
     <color name="darkgrey">#C5C5C5</color>
     <color name="black">#000</color>
+<<<<<<< HEAD
     <color name="gris">#FF565656</color>
     <color name="dorado">#F6880A</color>
 
@@ -34,4 +35,9 @@
     <color name="fuccia">#DD137B</color>
     <color name="rosa">#C985A3</color>
     <color name="bordo">#974578</color>
+=======
+
+    <color name="purpure2">#FFCE5C9A</color>
+    <color name="black1">#FF131313</color>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 </resources>

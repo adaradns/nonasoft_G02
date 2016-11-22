@@ -3,7 +3,10 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 import android.os.Bundle;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -15,7 +18,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+<<<<<<< HEAD
 import android.widget.LinearLayout;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -28,22 +34,38 @@ public class MiniJuegoActivity extends AppCompatActivity
     //Botones Superiores
     private Button btnTutorial2, btnJugar2;
     //Botones de los mini-juegos de los tutoriales
+<<<<<<< HEAD
     //nivel inicial
     private Button btnInicial1;
     private Button btnInicial2;
     private Button btnInicial3;
     //nivel intermedio
+=======
+        //nivel inicial
+    private Button btnInicial1;
+    private Button btnInicial2;
+    private Button btnInicial3;
+    private Button btnInicial4;
+        //nivel intermedio
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
     private Button btnIntermedio1;
     private Button btnIntermedio2;
     private Button btnIntermedio3;
     private Button btnIntermedio4;
+<<<<<<< HEAD
     //nivel avanzado
+=======
+        //nivel avanzado
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
     private Button btnAvanzado1;
     private Button btnAvanzado2;
     private Button btnAvanzado3;
 
+<<<<<<< HEAD
     LinearLayout linearLayout;
 
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
     TabHost tabs;
 
     @Override
@@ -51,8 +73,11 @@ public class MiniJuegoActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mini_juego);
 
+<<<<<<< HEAD
         linearLayout = (LinearLayout) findViewById(R.id.linearLayoutMinijuegos);
 
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
         txtNiveles = (TextView) findViewById(R.id.txtNiveles);
 
         btnTutorial2 = (Button) findViewById(R.id.btnTutorialJuego);
@@ -61,10 +86,18 @@ public class MiniJuegoActivity extends AppCompatActivity
         btnInicial1 = (Button) findViewById(R.id.btnInicial1);
         btnInicial2 = (Button) findViewById(R.id.btnInicial2);
         btnInicial3 = (Button) findViewById(R.id.btnInicial3);
+<<<<<<< HEAD
+=======
+        btnInicial4 = (Button) findViewById(R.id.btnInicial4);
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
         btnIntermedio1 = (Button) findViewById(R.id.btnIntermedio1);
         btnIntermedio2 = (Button) findViewById(R.id.btnIntermedio2);
         btnIntermedio3 = (Button) findViewById(R.id.btnIntermedio3);
+<<<<<<< HEAD
+=======
+        btnIntermedio4 = (Button) findViewById(R.id.btnIntermedio4);
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
         btnAvanzado1 = (Button) findViewById(R.id.btnAvanzado1);
         btnAvanzado2 = (Button) findViewById(R.id.btnAvanzado2);
@@ -76,6 +109,7 @@ public class MiniJuegoActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+<<<<<<< HEAD
 
         //----TIPOGRAFIA----
         //cargando ruta
@@ -116,6 +150,8 @@ public class MiniJuegoActivity extends AppCompatActivity
         btnAvanzado3.setTypeface(tf);
 
 
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -150,6 +186,7 @@ public class MiniJuegoActivity extends AppCompatActivity
         tabs.setCurrentTab(0);
         //------------ fin las tablas "inicial" "medio" "avanzado"
 
+<<<<<<< HEAD
         //-----Al entrar a la app-----------
         txtNiveles.setText("JUEGO INICIAL");
         //------COLORES------
@@ -161,12 +198,16 @@ public class MiniJuegoActivity extends AppCompatActivity
 
 
 
+=======
+        txtNiveles.setText("JUEGO: Inicial");
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
 
         //-----TABS/LISTENER-------
         tabs.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {
                 if ("juegotab1".equals(tabId)){
+<<<<<<< HEAD
                     txtNiveles.setText("JUEGO INICIAL");
                     txtNiveles.setBackgroundColor(Color.parseColor("#DA251D"));
                     txtNiveles.setTextColor(Color.parseColor("#ffffff"));
@@ -194,6 +235,15 @@ public class MiniJuegoActivity extends AppCompatActivity
                     tabs.setBackgroundColor(Color.parseColor("#E7C7D6"));
                     btnTutorial2.setBackgroundColor(Color.parseColor("#E7C7D6"));
                     linearLayout.setBackgroundColor(Color.parseColor("#E7C7D6"));
+=======
+                    txtNiveles.setText("JUEGO: Inicial");
+                }
+                if ("juegotab2".equals(tabId)){
+                    txtNiveles.setText("JUEGO: Intermedio");
+                }
+                if ("juegotab3".equals(tabId)){
+                    txtNiveles.setText("JUEGO: Avanzado");
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
                 }
             }
         });
@@ -210,7 +260,11 @@ public class MiniJuegoActivity extends AppCompatActivity
 
 
         //IR A MINI JUEGO DE TODAS LAS CATEGORIAS
+<<<<<<< HEAD
         //INICIAL
+=======
+            //INICIAL
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
         btnInicial1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -231,6 +285,7 @@ public class MiniJuegoActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
 
         btnInicial3.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -311,6 +366,8 @@ public class MiniJuegoActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
     }
 
     @Override
