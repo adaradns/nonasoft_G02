@@ -33,19 +33,11 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION" />
-        <uses-permission android:name="android.permission.INTERNET" />
-        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-        <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-
         <activity android:name=".Activities.IntroductionOneActivity" />
         <activity android:name=".Activities.IntroductionTwoActivity" />
         <activity android:name=".Activities.IntroductionThreeActivity" />
-        <activity android:name=".Activities.LoginWithGoogle" />
         <activity android:name=".Activities.IntroductionFourActivity" />
-        <activity android:name=".Login.Login" />
-        <activity android:name=".Login.Register" />
-        <activity android:name=".Activities.OpcionesMinijuego"></activity>
+
         <activity
             android:name=".Activities.SegundaActivity"
             android:label="@string/title_activity_segunda"
@@ -57,6 +49,31 @@
         </activity>
         <activity
             android:name=".Activities.TutorialActivity"
+            android:parentActivityName=".Activities.SegundaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.SegundaActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.MiniJuegoActivity"
+            android:label="@string/title_activity_mini_juego"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.LogrosActivity"
+            android:parentActivityName=".Activities.SegundaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.SegundaActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.Juego"
+            android:parentActivityName=".Activities.MiniJuegoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MiniJuegoActivity" />
+        </activity>
+        <activity
+            android:name=".Activities.Terminos"
             android:parentActivityName=".Activities.SegundaActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

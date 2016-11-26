@@ -1,51 +1,57 @@
 package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import com.app.nonasoft.grupo2_desarrollodesoftware.Parsers.CategoriesGet;
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by Yoel on 10/09/2016.
  */
 public class AdaptadorInicial extends BaseExpandableListAdapter{
     Context contexto;
-    //String[] padrea_inicial = {"getion de llamadas", "gestion de contactos", "galeria de imagenes", "mensajes de texto"};
-    List<String> padrea_inicial = new ArrayList<String>();;
-
+    SharedPreferences logros;
+    //CONTENIDO DEL NIVEL INICIAL
+    //Definiendo las categorias
+    static String[] padrea_inicial = {"CONFIGURACION / USO INICIAL", "MANEJO DE CONTACTOS",
+            "GESTION DE LLAMADAS / SMS"};
+    //Definiendo los tutoriales de cada categoria
     static String[][] tutoriales_inicial = {
+            {"Loguear cuenta de Google", "Buscar y bajar aplicaciones", "Barra superior deslizante"},
             {"Agregar contacto", "Eliminar contacto", "Buscar contacto"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
+            {"Realizar llamada", "Atender llamada", "Enviar SMS", "Ver registro"}
+    };
+    //Defiendo la estructura generica de los tutoriales
+    //NOTA: Los tutoriales_inicial_generico y tutoriales_inicial deben ser identicos en tamaño
+    //NOTA: la eleccion va a tomar el valor de tutoriales_inicial_generico
+    static String[][] tutoriales_inicial_generico = {
+            {"inicial_categoria1_tut1", "inicial_categoria1_tut2", "inicial_categoria1_tut3"},
+            {"inicial_categoria2_tut1", "inicial_categoria2_tut2", "inicial_categoria2_tut3"},
+            {"inicial_categoria3_tut1", "inicial_categoria3_tut2", "inicial_categoria3_tut3", "inicial_categoria3_tut4"}
     };
 
+    private Typeface tf;
 
-    public AdaptadorInicial(Context context, List<String> listaCategoriaInicial){
+    private int punto;
+
+    public AdaptadorInicial(Context context){
         this.contexto = context;
-        Log.d("MI ELEM: ", listaCategoriaInicial.get(0));
-        for(int i = 0; i < listaCategoriaInicial.size(); i++){
-            padrea_inicial.add(listaCategoriaInicial.get(i));
-        }
+        this.tf = Typeface.createFromAsset(context.getAssets(), "fonts/century-gothic.ttf");
+        this.punto = 0;
     }
 
     @Override
     public int getGroupCount() {
-        return padrea_inicial.size();
+        return padrea_inicial.length;
     }
 
     @Override
@@ -83,8 +89,33 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
         //Con esto "inflate" "hereda" la estructura del layout "group_item.xml"
         View inflate = View.inflate(contexto, R.layout.list_group, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tvPadre);
-        tv.setText(padrea_inicial.get(groupPosition));
+        tv.setText(padrea_inicial[groupPosition]);
 
+        tv.setBackgroundColor(Color.parseColor("#974578"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+        tv.setTypeface(tf);
+
+        //PARA CARGAR LOS LOGROS EN LA LISTA DE TUTORIALES DE LA CATEGORIA
+        logros = contexto.getSharedPreferences("logrosConseguidos",0);
+
+        int logroIni1 = logros.getInt("btnLogroInicial1", 0);
+        if(logroIni1 == 1){
+            if(padrea_inicial[groupPosition] == "CONFIGURACION / USO INICIAL") {
+                tv.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.star_big_on, 0);
+            }
+        }
+        int logroIni2 = logros.getInt("btnLogroInicial2", 0);
+        if(logroIni2 == 1){
+            if(padrea_inicial[groupPosition] == "MANEJO DE CONTACTOS") {
+                tv.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.star_big_on, 0);
+            }
+        }
+        int logroIni3 = logros.getInt("btnLogroInicial3", 0);
+        if(logroIni3 == 1){
+            if(padrea_inicial[groupPosition] == "GESTION DE LLAMADAS / SMS") {
+                tv.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.star_big_on, 0);
+            }
+        }
         return inflate;
     }
 
@@ -94,6 +125,10 @@ public class AdaptadorInicial extends BaseExpandableListAdapter{
         View inflate = View.inflate(contexto, R.layout.list_item, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tvHijo);
         tv.setText(tutoriales_inicial[groupPosition][childPosition]);
+
+        tv.setBackgroundColor(Color.parseColor("#C985A3"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+        tv.setTypeface(tf);
 
         return inflate;
     }

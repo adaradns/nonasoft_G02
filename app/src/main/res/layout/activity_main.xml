@@ -6,45 +6,12 @@
     android:background="@color/blue"
     android:gravity="top|bottom">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/presentacion"
-        android:textSize="18sp"
-        android:textColor="@color/withe"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:padding="10dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/logo"
-        android:id="@+id/imageView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView">
-
-        <Button
-            android:id="@+id/iniciarBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="comenzar"
-            android:background="@drawable/pressed_button"
-            android:textColor="#ffffff"
-            android:layout_marginRight="68dp"
-            android:layout_marginEnd="68dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/presentacion"
+        android:background="@color/withe"
+        />
 
 </RelativeLayout>

@@ -1,32 +1,47 @@
 package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
-
+import android.content.res.AssetManager;
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Yoel on 10/09/2016.
  */
 public class AdaptadorIntermedio extends BaseExpandableListAdapter {
     Context contexto;
-    String[] padre_intermedio= {"Descargar Aplicaciones", "Uso de redes sociales", "Musica/Radio", "Accesorios"};
+    SharedPreferences logros;
+    static String[] padre_intermedio = {"APLICACIONES ÚTILES", "REDES SOCIALES", "USO DE REDES SOCIALES"};
 
     static String[][] tutoriales_intermedio= {
-            {"Agregar tutorial"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"},
-            {"Agregar tutoriales"}
+            {"Google maps", "Notas", "Google fotos"},
+            {"Introducción a Facebook", "Introducción a Twitter","Introducción a Instagram"},
+            {"Funciones basicas de Facebook", "Funciones basicas de Twitter"}
     };
+
+    static String[][] tutoriales_intermedio_generico = {
+            {"intermedio_categoria1_tut1", "intermedio_categoria1_tut2", "intermedio_categoria1_tut3"},
+            {"intermedio_categoria2_tut1", "intermedio_categoria2_tut2", "intermedio_categoria2_tut3"},
+            {"intermedio_categoria3_tut1", "intermedio_categoria3_tut2", "intermedio_categoria3_tut3"}
+    };
+
+    private Typeface tf;
 
     public AdaptadorIntermedio(Context context){
         this.contexto = context;
+        this.tf = Typeface.createFromAsset(context.getAssets(), "fonts/century-gothic.ttf");
     }
 
     @Override
@@ -71,6 +86,32 @@ public class AdaptadorIntermedio extends BaseExpandableListAdapter {
         TextView tv = (TextView) inflate.findViewById(R.id.tvPadre);
         tv.setText(padre_intermedio[groupPosition]);
 
+        tv.setBackgroundColor(Color.parseColor("#007CC3"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+        tv.setTypeface(tf);
+
+        //PARA CARGAR LOS LOGROS EN LA LISTA DE TUTORIALES DE LA CATEGORIA
+        logros = contexto.getSharedPreferences("logrosConseguidos",0);
+
+        int logroInter1 = logros.getInt("btnLogroIntermedio1", 0);
+        if(logroInter1 == 1){
+            if(padre_intermedio[groupPosition] == "APLICACIONES UTILES") {
+                tv.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.star_big_on, 0);
+            }
+        }
+        int logroInter2 = logros.getInt("btnLogroIntermedio2", 0);
+        if(logroInter2 == 1){
+            if(padre_intermedio[groupPosition] == "REDES SOCIALES") {
+                tv.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.star_big_on, 0);
+            }
+        }
+        int logroInter3 = logros.getInt("btnLogroIntermedio3", 0);
+        if(logroInter3 == 1){
+            if(padre_intermedio[groupPosition] == "USO DE REDES SOCIALES") {
+                tv.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.star_big_on, 0);
+            }
+        }
+
         return inflate;
     }
 
@@ -80,6 +121,10 @@ public class AdaptadorIntermedio extends BaseExpandableListAdapter {
         View inflate = View.inflate(contexto, R.layout.list_item, null);
         TextView tv = (TextView) inflate.findViewById(R.id.tvHijo);
         tv.setText(tutoriales_intermedio[groupPosition][childPosition]);
+
+        tv.setBackgroundColor(Color.parseColor("#4DB4BB"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+        tv.setTypeface(tf);
 
         return inflate;
     }

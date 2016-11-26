@@ -21,7 +21,6 @@ public class IndexViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index_view);
 
-        editTxt = (EditText) findViewById(R.id.txtName);
         editTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
