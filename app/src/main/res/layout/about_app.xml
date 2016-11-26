@@ -6,7 +6,10 @@
     android:layout_width="match_parent"
     android:fillViewport="true"
     android:layout_height="match_parent" >
+<<<<<<< HEAD
 
+=======
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     <LinearLayout
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -24,7 +27,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:background="@drawable/nonasoftlogo"
+=======
+            android:background="@drawable/nonaterminos"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             android:id="@+id/imageView2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -61,7 +68,14 @@
             android:layout_height="wrap_content"
             android:text="@string/aboutAppContent1"
             android:textStyle="bold"
+<<<<<<< HEAD
             android:id="@+id/textView3" />
+=======
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView5"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -87,6 +101,7 @@
             android:layout_alignStart="@+id/textView7"
             android:id="@+id/textView8" />
         <TextView
+<<<<<<< HEAD
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/denis"
@@ -115,6 +130,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+=======
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/denis"
+            android:layout_below="@+id/textView8"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:id="@+id/textView9" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enriquez"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/textView7"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/niesi"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:id="@+id/textView11" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             android:text="@string/vega"
             android:layout_above="@+id/textView9"
             android:layout_alignLeft="@+id/textView11"

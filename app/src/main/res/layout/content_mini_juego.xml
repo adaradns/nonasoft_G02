@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linearlayoutMinijuego"
+=======
+<<<<<<< HEAD
+    android:id="@+id/linearLayoutMinijuegos"
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.app.nonasoft.grupo2_desarrollodesoftware.Activities.MiniJuegoActivity"
     tools:showIn="@layout/app_bar_mini_juego"
@@ -24,7 +34,11 @@
             android:text="@string/tutoriales"
             android:drawableLeft="@drawable/ic_library_books_black_24dp"
             android:textAlignment="center"
+<<<<<<< HEAD
             android:textColor="@color/bordo"/>
+=======
+            android:textColor="@color/purpure"/>
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
         <Button
             android:id="@+id/btnJugarJuego"
@@ -35,7 +49,11 @@
             android:drawableLeft="@drawable/ic_casino_black_24dp"
             android:drawablePadding="8dp"
             android:textAlignment="center"
+<<<<<<< HEAD
             android:textColor="@color/bordo"
+=======
+            android:textColor="@color/purpure"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             />
     </LinearLayout>
 
@@ -45,7 +63,11 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:textColor="@color/withe"
+<<<<<<< HEAD
         android:background="@color/bordo"
+=======
+        android:background="@color/purpure"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         android:textSize="22dp"
         android:padding="10dp"
         android:textStyle="bold"/>
@@ -75,8 +97,17 @@
                     android:id="@+id/juegoInicial"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
+<<<<<<< HEAD
                     android:layout_height="match_parent"
                     android:weightSum="1">
+=======
+<<<<<<< HEAD
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+=======
+                    android:layout_height="match_parent">
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                     <Button
                         android:id="@+id/btnInicial1"
@@ -86,13 +117,26 @@
                         android:drawableLeft="@drawable/ic_menu_manage"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
+<<<<<<< HEAD
                         android:background="@color/fuccia"
                         android:text="@string/inicial1"
+=======
+<<<<<<< HEAD
+                        android:background="@color/rojo"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:background="@color/purpure"
+                        android:text="@string/inicial1"
+                        android:layout_marginBottom="10px" />
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                     <Button
                         android:id="@+id/btnInicial2"
@@ -102,29 +146,73 @@
                         android:drawableLeft="@drawable/ic_person_add_black_24dp"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
+<<<<<<< HEAD
                         android:background="@color/rosa"
+=======
+<<<<<<< HEAD
+                        android:background="@color/naranja"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:text="@string/inicial2"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:background="@color/purpure"
+                        android:text="@string/inicial2"
+                        android:layout_marginBottom="10px"/>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                     <Button
                         android:id="@+id/btnInicial3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:drawableLeft="@drawable/ic_photo_library_black_24dp"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
                         android:background="@color/bordo"
+=======
+<<<<<<< HEAD
+                        android:drawableLeft="@drawable/ic_phone_forwarded_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/amarillo"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:text="@string/inicial3"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:drawableLeft="@drawable/ic_photo_library_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/inicial3"
+                        android:layout_marginBottom="10px"/>
+
+                    <Button
+                        android:id="@+id/btnInicial4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/ic_dialog_email"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/inicial4"
+                        android:layout_marginBottom="10px"/>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                 </LinearLayout>
 
@@ -139,39 +227,82 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:drawableLeft="@drawable/ic_public_black_24dp"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
                         android:background="@color/azul"
                         android:text="@string/intermedio1"
+=======
+<<<<<<< HEAD
+                        android:drawableLeft="@drawable/ic_important_devices_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/azul"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:drawableLeft="@android:drawable/ic_menu_send"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio1"
+                        android:layout_marginBottom="10px" />
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                     <Button
                         android:id="@+id/btnIntermedio2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:drawableLeft="@drawable/ic_library_music_black_24dp"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
                         android:background="@color/celeste"
                         android:text="@string/intermedio2"
+=======
+<<<<<<< HEAD
+                        android:drawableLeft="@drawable/ic_public_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/celeste"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:drawableLeft="@drawable/ic_menu_slideshow"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio2"
+                        android:layout_marginBottom="10px"/>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                     <Button
                         android:id="@+id/btnIntermedio3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:drawableLeft="@drawable/ic_arrow_downward_black_24dp"
+=======
+<<<<<<< HEAD
+                        android:drawableLeft="@drawable/ic_thumb_up_black_24dp"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
                         android:background="@color/turquesa"
@@ -182,6 +313,29 @@
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
 
+<<<<<<< HEAD
+=======
+=======
+                        android:drawableLeft="@android:drawable/sym_def_app_icon"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio3"
+                        android:layout_marginBottom="10px"/>
+
+                    <Button
+                        android:id="@+id/btnIntermedio4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:drawableLeft="@android:drawable/sym_def_app_icon"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/intermedio4"
+                        android:layout_marginBottom="10px"/>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                 </LinearLayout>
 
@@ -196,48 +350,105 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:drawableLeft="@drawable/ic_contact_mail_black_24dp"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
                         android:background="@color/rojo"
+=======
+<<<<<<< HEAD
+                        android:drawableLeft="@drawable/ic_contact_mail_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/fuccia"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:text="@string/avanzado1"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:drawableLeft="@android:drawable/ic_dialog_email"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/avanzado1"
+                        android:layout_marginBottom="10px" />
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                     <Button
                         android:id="@+id/btnAvanzado2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:drawableLeft="@drawable/ic_settings_applications_black_24dp"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
                         android:background="@color/naranja"
+=======
+<<<<<<< HEAD
+                        android:drawableLeft="@drawable/ic_settings_applications_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/rosa"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:text="@string/avanzado2"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:drawableLeft="@drawable/ic_menu_manage"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/avanzado2"
+                        android:layout_marginBottom="10px"/>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                     <Button
                         android:id="@+id/btnAvanzado3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:drawableLeft="@drawable/ic_web_black_24dp"
                         android:drawablePadding="8dp"
                         android:textColor="@android:color/white"
                         android:background="@color/amarillo"
+=======
+<<<<<<< HEAD
+                        android:drawableLeft="@drawable/ic_web_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/bordo"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                         android:text="@string/avanzado3"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp" />
+<<<<<<< HEAD
+=======
+=======
+                        android:drawableLeft="@android:drawable/ic_menu_view"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/white"
+                        android:background="@color/purpure"
+                        android:text="@string/avanzado3"
+                        android:layout_marginBottom="10px"/>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
                 </LinearLayout>
 

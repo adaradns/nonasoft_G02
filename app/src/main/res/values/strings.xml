@@ -25,7 +25,7 @@
     <string name="presentacion">Nonasoft es una aplicacion que te ayudara, mediante tutoriales didacticos, aprender el manejo basico de tu celular.</string>
 
 
-    <string name="Nonasoft">Nonasoft</string>
+    <string name="Nonasoft">NonaSoft</string>
     <string name="title_activity_navigation">navigation</string>
     <string name="bienvenida">Bienvenido</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -57,14 +57,27 @@
     <string name="minijuego">JUEGOS</string>
 
     <!--INICIAL LEVEL-->
+<<<<<<< HEAD
     <string name="inicial1">CONFIGURACION/ USO INICIAL</string>
     <string name="inicial2">MANEJO DE CONTACTOS</string>
     <string name="inicial3">GESTION DE LLAMADAS/SMS</string>
+=======
+<<<<<<< HEAD
+    <string name="inicial1">CONFIGURACION/ USO INICIAL</string>
+    <string name="inicial2">MANEJO DE CONTACTOS</string>
+    <string name="inicial3">GESTION DE LLAMADAS/SMS</string>
+=======
+    <string name="inicial1">CONFIGURACION BASICA DEL CELULAR</string>
+    <string name="inicial2">LLAMADAS Y CONTACTOS</string>
+    <string name="inicial3">GALERIA DE IMAGENES</string>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     <string name="inicial4">MENSAJES DE TEXTO</string>
     <string name="niveles">NIVELES</string>
     <string name="gContacts">GESTION DE CONTACTOS</string>
     <string name="llamadas">LLAMADAS</string>
     <string name="camera">USO DE CAMARA</string>
+<<<<<<< HEAD
 
     <!--INTERMEDIO LEVEL-->
     <string name="intermedio1">APLICACIONES ÚTILES</string>
@@ -76,11 +89,46 @@
     <string name="avanzado2">CONFIGURACION AVANZADA</string>
     <string name="avanzado3">NAVEGAR POR INTERNET</string>
 
+=======
+<<<<<<< HEAD
+=======
+
+    <!--INTERMEDIO LEVEL-->
+    <string name="intermedio1">REDES SOCIALES</string>
+    <string name="intermedio2">MUSICA/RADIO</string>
+    <string name="intermedio3">DESCARGA DE APLICACIONES</string>
+    <string name="intermedio4">APLICACIONES UTILES</string>
+
+    <!--AVANZADO LEVEL-->
+    <string name="avanzado1">CORREO ELECTRONICO</string>
+    <string name="avanzado2">CONFIGURACION AVANZADA DEL CELULAR</string>
+    <string name="avanzado3">NAVEGAR POR INTERNET</string>
+
+
+    <string name="opcionesInicial">OPCIONES PARA JUGAR</string>
+    <string name="inicialOpc">nivel inicial</string>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+
+    <!--INTERMEDIO LEVEL-->
+    <string name="intermedio1">APLICACIONES UTILES</string>
+    <string name="intermedio2">REDES SOCIALES</string>
+    <string name="intermedio3">USO DE REDES SOCIALES</string>
+
+    <!--AVANZADO LEVEL-->
+    <string name="avanzado1">CORREO ELECTRONICO</string>
+    <string name="avanzado2">CONFIGURACION AVANZADA</string>
+    <string name="avanzado3">NAVEGAR POR INTERNET</string>
+
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
     <!--JUEGO-->
     <string name="txtLogro">LOGRO:</string>
     <string name="txtCorrectas">CORRECTAS</string>
     <!--About app-->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     <string name="aboutAppterminos">TERMINOS Y CONDICIONES</string>
     <string name="aboutAppContentTerminos">
         Mediante el acceso y uso de esta aplicación, aceptas los términos de servicio de NonaSoft. En caso de no aceptar alguna de las condiciones en los términos de servicio, por favor no continúe usando la aplicación.
@@ -109,16 +157,35 @@ Queremos darte independencia a la hora de avanzar por nuevos caminos y superar s
     <string name="vega">Vega Laura</string>
 
     <!--MINIJUEGO-->
+<<<<<<< HEAD
+=======
+=======
+    <string name="aboutApp">NONASOFT</string>
+    <string name="aboutAppContent">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor </string>
+    <string name="aboutAppContent1">Desarrolladores</string>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     <string name="title_activity_mini_juego">MiniJuegoActivity</string>
     <string name="opciones">Opciones</string>
     <string name="logros">Logros de usuario</string>
     <string name="salir">salir</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     <string name="condiciones">Acerca de la aplicacion</string>
 
     <!--logros.xml-->
     <string name="nivelInicial">NIVEL INCIAL</string>
     <string name="nivelIntermedio">NIVEL INTERMEDIO</string>
     <string name="nivelAvanzado">NIVEL AVANZADO</string>
+<<<<<<< HEAD
 
+=======
+=======
+    <string name="condiciones">Terminos y condiciones</string>
+
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
 </resources>

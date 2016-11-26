@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1"
-    android:gravity="top|bottom">
+    android:layout_height="match_parent">
 
+    <include android:id="@+id/tool_bar"
+        layout="@layout/toolbar">
+
+    </include>
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/anim"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/presentacion"
         android:background="@color/withe"
         />
 
-</RelativeLayout>
+</LinearLayout>

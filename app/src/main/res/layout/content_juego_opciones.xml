@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@color/material_blue_grey_800"
     android:weightSum="1">
 
@@ -20,11 +21,46 @@
         android:backgroundTint="@color/button_material_light"
         android:layout_margin="3dp"
         android:layout_marginTop="3dp">
+=======
+<<<<<<< HEAD
+    android:background="@color/material_blue_grey_800"
+    android:weightSum="1">
+
+    <include android:id="@+id/tool_bar1"
+        layout="@layout/toolbar1">
+    </include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:paddingRight="10dp"
+        android:focusable="false"
+        android:backgroundTint="@color/button_material_light"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+=======
+    android:background="@color/darkgrey"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="332dp"
+        android:layout_height="154dp"
+        android:background="@drawable/abc_cab_background_internal_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.20">
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
         <TextView
             android:id="@+id/txtPregunta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:text="Seleccione su respuesta"
             android:textAlignment="center"
             android:padding="10dp"
@@ -35,10 +71,26 @@
             android:id="@+id/imgResultado"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+=======
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp" />
+        <ImageView
+            android:id="@+id/imgCorrecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/correcto"
+<<<<<<< HEAD
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:visibility="gone"/>
 
+<<<<<<< HEAD
     </LinearLayout>
 
     <LinearLayout
@@ -98,15 +150,200 @@
             android:drawablePadding="8dp"
             android:textColor="@android:color/white"
             android:layout_marginTop="5dp" />
+=======
+        <ImageView
+            android:id="@+id/imgIncorrecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/incorrecto"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout"
+            >
+            <ImageView
+                android:id="@+id/imgLogro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logronona"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <Button
+            android:id="@+id/btnOpcion1"
+=======
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="341dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <Button
+            android:id="@+id/btnFacebook"
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+<<<<<<< HEAD
+            android:contextClickable="false"
+            android:layout_above="@+id/btnOpcion2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnOpcion2"
+=======
+            android:backgroundTint="@color/fuccia"
+            android:text="Facebook"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contextClickable="false"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btnTwitter"
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+<<<<<<< HEAD
+            android:text="Twitter"
+            android:layout_above="@+id/btnOpcion3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnOpcion3"
+=======
+            android:backgroundTint="@color/purpure"
+            android:text="Twitter"
+            android:layout_below="@+id/btnFacebook"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btnWhatsapp"
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+<<<<<<< HEAD
+            android:text="Whatsapp"
+            android:layout_above="@+id/btnOpcion4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
         <Button
             android:id="@+id/btnOpcion4"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@android:color/white"
             android:layout_marginTop="5dp" />
 
     </LinearLayout>
+=======
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_star_big_off"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView6" />
+        <TextView
+            android:id="@+id/txtPuntaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 / 3"
+            android:textColor="@color/withe"
+            android:textSize="25dp"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_marginLeft="10dp" />
+=======
+            android:backgroundTint="@color/purpure2"
+            android:text="Whatsapp"
+            android:padding="20dp"
+            android:layout_above="@+id/btnInstagram"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnInstagram"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/clearpurpure"
+            android:text="Instagram"
+            android:padding="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="26dp" />
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+    </RelativeLayout>
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
 </LinearLayout>

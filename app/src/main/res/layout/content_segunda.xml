@@ -24,7 +24,11 @@
             android:text="@string/tutoriales"
             android:drawableLeft="@drawable/ic_library_books_black_24dp"
             android:textAlignment="center"
+<<<<<<< HEAD
             android:textColor="@color/bordo"/>
+=======
+            android:textColor="@color/purpure"/>
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
         <Button
             android:id="@+id/btnJugar"
@@ -33,8 +37,17 @@
             android:layout_weight="1"
             android:text="@string/minijuego"
             android:drawableLeft="@drawable/ic_casino_black_24dp"
+<<<<<<< HEAD
             android:textAlignment="center"
             android:textColor="@color/bordo"/>
+=======
+<<<<<<< HEAD
+=======
+            android:drawablePadding="8dp"
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+            android:textAlignment="center"
+            android:textColor="@color/purpure"/>
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     </LinearLayout>
 
     <TextView
@@ -43,7 +56,11 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:textColor="@color/withe"
+<<<<<<< HEAD
         android:background="@color/bordo"
+=======
+        android:background="@color/purpure"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         android:textSize="22dp"
         android:padding="10dp"
         android:textStyle="bold"/>

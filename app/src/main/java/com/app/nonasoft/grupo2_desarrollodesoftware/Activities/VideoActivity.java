@@ -1,57 +1,36 @@
 package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.media.Image;
+import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.*;
-<<<<<<< HEAD
-import android.widget.Button;
+import android.view.MenuItem;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-=======
-import android.widget.ImageView;
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
-public class TutorialActivity extends AppCompatActivity {
+/**
+ * Created by Adara on 11/22/2016.
+ */
+public class VideoActivity extends AppCompatActivity {
     private String election;
     private Toolbar toolbar;
-<<<<<<< HEAD
-    //private pl.droidsonroids.gif.GifImageView gif;
-    private ImageView btns;
-
-    private boolean isButtonClicked = false;
-=======
     private pl.droidsonroids.gif.GifImageView gif;
     private ImageView btns;
 
-    private boolean isButtonClicked = false;
 
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutorial);
+        setContentView(R.layout.activity_video);
 
-<<<<<<< HEAD
-        //asociando gif
-        // gif = (pl.droidsonroids.gif.GifImageView) findViewById(R.id.anim);
+
+        gif = (pl.droidsonroids.gif.GifImageView) findViewById(R.id.anim);
         btns = (ImageView) findViewById(R.id.btns);
 
-
-=======
-        //gif = (pl.droidsonroids.gif.GifImageView) findViewById(R.id.anim);
-        btns = (ImageView) findViewById(R.id.btns);
-
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         //creando toolbar
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
@@ -61,12 +40,6 @@ public class TutorialActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         //Capturando la opcion elegida
         Intent intent = getIntent();
         Bundle extra = intent.getExtras();
@@ -76,36 +49,20 @@ public class TutorialActivity extends AppCompatActivity {
             //NIVEL INICIAL
             //categoria 1
             if (election.equals("inicial_categoria1_tut1")) {
-                btns.setImageResource(R.drawable.btn1);
-<<<<<<< HEAD
-                //gif.setImageResource(R.drawable.gifprueba);
-=======
+                gif.setImageResource(R.drawable.presentacion);
 
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
+
             } else if (election.equals("inicial_categoria1_tut2")) {
-                btns.setImageResource(R.drawable.btn2);
+                gif.setImageResource(R.drawable.presentacion);
             } else if (election.equals("inicial_categoria1_tut3")) {
-                btns.setImageResource(R.drawable.btn3);
+                gif.setImageResource(R.drawable.presentacion);
             }
             //categoria 2
             else if (election.equals("inicial_categoria2_tut1")) {
-                btns.setImageResource(R.drawable.btn4);
+                //gif.setImageResource(R.drawable.gifprueba1);
             } else if (election.equals("inicial_categoria2_tut2")) {
-                btns.setImageResource(R.drawable.btn5);
+                //gif.setImageResource(R.drawable.gifprueba1);
             } else if (election.equals("inicial_categoria2_tut3")) {
-<<<<<<< HEAD
-                btns.setImageResource(R.drawable.btn6);
-            }
-            //categoria 3
-            else if (election.equals("inicial_categoria3_tut1")) {
-                btns.setImageResource(R.drawable.btn7);
-            } else if (election.equals("inicial_categoria3_tut2")) {
-                btns.setImageResource(R.drawable.btn8);
-            } else if (election.equals("inicial_categoria3_tut3")) {
-                btns.setImageResource(R.drawable.btn9);
-            } else if (election.equals("inicial_categoria3_tut4")) {
-                btns.setImageResource(R.drawable.btn10);
-=======
                 //gif.setImageResource(R.drawable.gifprueba1);
             }
             //categoria 3
@@ -117,33 +74,10 @@ public class TutorialActivity extends AppCompatActivity {
                 //gif.setImageResource(R.drawable.gifprueba1);
             } else if (election.equals("inicial_categoria3_tut4")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             }
             //NIVEL INTERMEDIO
             //categoria 1
             else if (election.equals("intermedio_categoria1_tut1")) {
-<<<<<<< HEAD
-                btns.setImageResource(R.drawable.btn14);
-            } else if (election.equals("intermedio_categoria1_tut2")) {
-                btns.setImageResource(R.drawable.btn15);
-            } else if (election.equals("intermedio_categoria1_tut3")) {
-                btns.setImageResource(R.drawable.btn16);
-            }
-            //categoria 2
-            else if (election.equals("intermedio_categoria2_tut1")) {
-                btns.setImageResource(R.drawable.btn11);
-            } else if (election.equals("intermedio_categoria2_tut2")) {
-                btns.setImageResource(R.drawable.btn12);
-
-            }else if (election.equals("intermedio_categoria2_tut3")) {
-                btns.setImageResource(R.drawable.btn13);
-            }
-            //categoria 3
-            else if (election.equals("intermedio_categoria3_tut1")) {
-                btns.setImageResource(R.drawable.btn17);
-            } else if (election.equals("intermedio_categoria3_tut2")) {
-                btns.setImageResource(R.drawable.btn18);
-=======
                 //gif.setImageResource(R.drawable.gifprueba);
             } else if (election.equals("intermedio_categoria1_tut2")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
@@ -163,42 +97,20 @@ public class TutorialActivity extends AppCompatActivity {
                 //gif.setImageResource(R.drawable.gifprueba1);
             } else if (election.equals("intermedio_categoria3_tut2")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             } else if (election.equals("intermedio_categoria3_tut3")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
             }
             //NIVEL AVANzADO
             //categoria 1
             else if (election.equals("avanzado_categoria1_tut1")) {
-<<<<<<< HEAD
-                btns.setImageResource(R.drawable.btn22);
-            } else if (election.equals("avanzado_categoria1_tut2")) {
-                btns.setImageResource(R.drawable.btn23);
-=======
                 //gif.setImageResource(R.drawable.gifprueba);
             } else if (election.equals("avanzado_categoria1_tut2")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             } else if (election.equals("avanzado_categoria1_tut3")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
             }
             //categoria 2
             else if (election.equals("avanzado_categoria2_tut1")) {
-<<<<<<< HEAD
-                btns.setImageResource(R.drawable.btn24);
-            } else if (election.equals("avanzado_categoria2_tut2")) {
-                btns.setImageResource(R.drawable.btn26);
-            } else if (election.equals("avanzado_categoria2_tut3")) {
-                btns.setImageResource(R.drawable.btn25);
-            }
-            //categoria 3
-            else if (election.equals("avanzado_categoria3_tut1")) {
-                btns.setImageResource(R.drawable.btn20);
-            } else if (election.equals("avanzado_categoria3_tut2")) {
-                btns.setImageResource(R.drawable.btn19);
-            } else if (election.equals("avanzado_categoria3_tut3")) {
-                btns.setImageResource(R.drawable.btn21);
-=======
                 //gif.setImageResource(R.drawable.gifprueba1);
             } else if (election.equals("avanzado_categoria2_tut2")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
@@ -212,7 +124,6 @@ public class TutorialActivity extends AppCompatActivity {
                 //gif.setImageResource(R.drawable.gifprueba1);
             } else if (election.equals("avanzado_categoria3_tut3")) {
                 //gif.setImageResource(R.drawable.gifprueba1);
->>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             }
 
         }

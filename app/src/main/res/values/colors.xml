@@ -12,6 +12,10 @@
 
     <color name="darkgrey">#C5C5C5</color>
     <color name="black">#000</color>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     <color name="gris">#FF565656</color>
     <color name="dorado">#F6880A</color>
 
@@ -20,8 +24,13 @@
 
 
     <!--NIVEL INICIAL-->
+<<<<<<< HEAD
     <color name="naranja">#f0dc6f38</color>
     <color name="rojo">#e93c34</color>
+=======
+    <color name="naranja">#e35d19</color>
+    <color name="rojo">#DA251D</color>
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     <color name="amarillo">#D9D207</color>
 
     <!--NIVEL INTERMEDIO-->
@@ -33,4 +42,12 @@
     <color name="fuccia">#DD137B</color>
     <color name="rosa">#C985A3</color>
     <color name="bordo">#974578</color>
+<<<<<<< HEAD
+=======
+=======
+
+    <color name="purpure2">#FFCE5C9A</color>
+    <color name="black1">#FF131313</color>
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 </resources>

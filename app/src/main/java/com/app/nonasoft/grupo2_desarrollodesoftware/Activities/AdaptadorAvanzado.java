@@ -3,7 +3,14 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
+=======
+<<<<<<< HEAD
+import android.graphics.Typeface;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,11 +29,22 @@ import java.util.List;
  */
 public class AdaptadorAvanzado extends BaseExpandableListAdapter {
     Context contexto;
+<<<<<<< HEAD
     SharedPreferences logros;
     static String[] padre_avanzado = {"APLICACIONES MAS UTILIZADAS", "CONFIGURACION AVANZADA","NAVEGAR POR INTERNET"};
 
     static String[][] tutoriales_avanzado= {
             {"Youtube funciones basicas", "Whatsapp funciones basicas"},
+=======
+<<<<<<< HEAD
+    static String[] padre_avanzado = {"CORREO ELECTRONICO", "CONFIGURACION AVANZADA","NAVEGAR POR INTERNET"};
+=======
+    static String[] padre_avanzado = {"Correo electronico", "Configuracion avanzada del celular","Navegar por internet"};
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+
+    static String[][] tutoriales_avanzado= {
+            {"Gmail: Bandeja, envio, adjuntar","Hotmail: Bandeja, envio, adjuntar","Exchange: Bandeja, envio, adjuntar"},
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
             {"Control de datos moviles","Conexión compartida", "Configuracion antirrobo"},
             {"Engaño y paginas falsas", "Configurar buscador y pagina inicio", "Historial de navegación"}
     };
@@ -87,6 +105,7 @@ public class AdaptadorAvanzado extends BaseExpandableListAdapter {
         tv.setText(padre_avanzado[groupPosition]);
 
         tv.setTypeface(tf);
+<<<<<<< HEAD
 
         tv.setBackgroundColor(Color.parseColor("#e93c34"));
         tv.setTextColor(Color.parseColor("#ffffff"));
@@ -113,6 +132,11 @@ public class AdaptadorAvanzado extends BaseExpandableListAdapter {
             }
         }
 
+=======
+        tv.setBackgroundColor(Color.parseColor("#974578"));
+        tv.setTextColor(Color.parseColor("#ffffff"));
+
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         return inflate;
     }
 
@@ -123,7 +147,11 @@ public class AdaptadorAvanzado extends BaseExpandableListAdapter {
         TextView tv = (TextView) inflate.findViewById(R.id.tvHijo);
         tv.setText(tutoriales_avanzado[groupPosition][childPosition]);
 
+<<<<<<< HEAD
         tv.setBackgroundColor(Color.parseColor("#f0dc6f38"));
+=======
+        tv.setBackgroundColor(Color.parseColor("#DD137B"));
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         tv.setTextColor(Color.parseColor("#ffffff"));
         tv.setTypeface(tf);
 

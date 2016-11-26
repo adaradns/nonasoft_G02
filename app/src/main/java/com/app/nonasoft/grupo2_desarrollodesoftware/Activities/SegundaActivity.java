@@ -3,7 +3,14 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
+=======
+<<<<<<< HEAD
+import android.graphics.Typeface;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 import android.os.Bundle;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,7 +23,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+<<<<<<< HEAD
 import android.widget.LinearLayout;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -39,20 +52,33 @@ public class SegundaActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segunda);
+<<<<<<< HEAD
 
         linearLayout = (LinearLayout) findViewById(R.id.linearLayout5);
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         niveles = (TextView) findViewById(R.id.niveles);
 
         btnJugar = (Button) findViewById(R.id.btnJugar);
         btnTutorial = (Button) findViewById(R.id.btnTutorial);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
+<<<<<<< HEAD
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Tutoriales");
         //----TIPOGRAFIA----
             //cargando ruta
         final String fontPach = "fonts/century-gothic.ttf";
             //cargando fuente
+=======
+        //----TIPOGRAFIA----
+        //cargando ruta
+        final String fontPach = "fonts/century-gothic.ttf";
+        //cargando fuente
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         final Typeface tf = Typeface.createFromAsset(getAssets(), fontPach);
         //----TIPOGRAFIA----
 
@@ -64,9 +90,12 @@ public class SegundaActivity extends AppCompatActivity
 
 
 
+<<<<<<< HEAD
         setSupportActionBar(toolbar);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+=======
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("NonaSoft");
 
@@ -79,7 +108,16 @@ public class SegundaActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        btnJugar = (Button) findViewById(R.id.btnJugar);
+        btnTutorial = (Button) findViewById(R.id.btnTutorial);
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
         //Creando las tablas "inicial" "medio" "avanzado"
         Resources res = getResources();
@@ -104,6 +142,7 @@ public class SegundaActivity extends AppCompatActivity
         //-----------------------------
 
         //-----Al entrar a la app-----------
+<<<<<<< HEAD
         niveles.setText("TUTORIAL INICIAL");
         //------COLORES------
         niveles.setBackgroundColor(Color.parseColor("#974578"));
@@ -143,10 +182,89 @@ public class SegundaActivity extends AppCompatActivity
                     btnJugar.setBackgroundColor(Color.parseColor("#F2B57D"));
                     linearLayout.setBackgroundColor(Color.parseColor("#F2B57D"));
                 }
+=======
+        niveles.setText("TUTORIAL: Inicial");
+        //------COLORES------
+        niveles.setBackgroundColor(Color.parseColor("#DA251D"));
+        niveles.setTextColor(Color.parseColor("#ffffff"));
+        tabs.setBackgroundColor(Color.parseColor("#F2B57D"));
+        btnJugar.setBackgroundColor(Color.parseColor("#F2B57D"));
+        linearLayout.setBackgroundColor(Color.parseColor("#F2B57D"));
+        //------Al entrar a la app-------
+        //-----TABS/LISTENER-------
+        tabs.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+            @Override
+            public void onTabChanged(String tabId) {
+                if ("mitab1".equals(tabId)){
+                    niveles.setText("TUTORIAL: Inicial");
+                    //------COLORES------
+                    niveles.setBackgroundColor(Color.parseColor("#DA251D"));
+                    niveles.setTextColor(Color.parseColor("#ffffff"));
+                    tabs.setBackgroundColor(Color.parseColor("#F2B57D"));
+                    btnJugar.setBackgroundColor(Color.parseColor("#F2B57D"));
+                    linearLayout.setBackgroundColor(Color.parseColor("#F2B57D"));
+                }
+                if ("mitab2".equals(tabId)){
+                    niveles.setText("TUTORIAL: Intermedio");
+                    //------COLORES------
+                    niveles.setBackgroundColor(Color.parseColor("#007CC3"));
+                    niveles.setTextColor(Color.parseColor("#ffffff"));
+                    tabs.setBackgroundColor(Color.parseColor("#CBEAFA"));
+                    btnJugar.setBackgroundColor(Color.parseColor("#CBEAFA"));
+                    linearLayout.setBackgroundColor(Color.parseColor("#CBEAFA"));
+                }
+                if ("mitab3".equals(tabId)){
+                    niveles.setText("TUTORIAL: Avanzado");
+                    //------COLORES------
+                    niveles.setBackgroundColor(Color.parseColor("#974578"));
+                    niveles.setTextColor(Color.parseColor("#ffffff"));
+                    tabs.setBackgroundColor(Color.parseColor("#E7C7D6"));
+                    btnJugar.setBackgroundColor(Color.parseColor("#E7C7D6"));
+                    linearLayout.setBackgroundColor(Color.parseColor("#E7C7D6"));
+                }
             }
         });
         //-----TABS/LISTENER-------
 
+<<<<<<< HEAD
+=======
+        niveles.setText("TUTORIAL: Inicial");
+        niveles.setBackgroundColor(Color.parseColor("#007CC3"));
+        niveles.setTextColor(Color.parseColor("#ffffff"));
+        //-----TABS/LISTENER-------
+        tabs.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+            @Override
+            public void onTabChanged(String tabId) {
+                if ("mitab1".equals(tabId)){
+                    niveles.setText("TUTORIAL: Inicial");
+                }
+                if ("mitab2".equals(tabId)){
+                    niveles.setText("TUTORIAL: Intermedio");
+                }
+                if ("mitab3".equals(tabId)){
+                    niveles.setText("TUTORIAL: Avanzado");
+                }
+            }
+        });
+        //-----TABS/LISTENER-------
+
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+        //Final de tab
+        btnJugar.setBackgroundColor(Color.parseColor("#FFFFFF"));
+
+        tabs.setVisibility(View.VISIBLE);
+        //Funcionalidad btnJugar
+        btnJugar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SegundaActivity.this, MiniJuegoActivity.class);
+                startActivity(intent);
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
+            }
+        });
+        //-----TABS/LISTENER-------
+
+<<<<<<< HEAD
         //Final de tab
 
         tabs.setVisibility(View.VISIBLE);
@@ -159,6 +277,11 @@ public class SegundaActivity extends AppCompatActivity
                 finish();
             }
         });
+=======
+        //ExpandableListView
+        lista_expandible_incial = (ExpandableListView) findViewById(R.id.expandableListView1);
+        lista_expandible_incial.setAdapter(new AdaptadorInicial(this));
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
         //ExpandableListView
         lista_expandible_incial = (ExpandableListView) findViewById(R.id.expandableListView1);
@@ -246,8 +369,17 @@ public class SegundaActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_logro) {
+<<<<<<< HEAD
             Intent intent = new Intent(SegundaActivity.this, LogrosActivity.class);
             startActivity(intent);
+=======
+<<<<<<< HEAD
+            Intent intent = new Intent(SegundaActivity.this, LogrosActivity.class);
+            startActivity(intent);
+=======
+            // Handle the camera action
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         } else if (id == R.id.nav_salir) {
             Intent intent = new Intent(Intent.ACTION_MAIN);
             finish();

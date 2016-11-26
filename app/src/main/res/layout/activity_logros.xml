@@ -4,8 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.app.nonasoft.grupo2_desarrollodesoftware.Activities.LogrosActivity"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:background="@color/material_blue_grey_800">
+=======
+    android:orientation="vertical">
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 
         <include android:id="@+id/tool_bar"
             layout="@layout/toolbar">
@@ -96,7 +100,11 @@
                             android:text="@string/intermedio1"
                             android:textColor="@android:color/white"
                             android:background="@color/azul"
+<<<<<<< HEAD
                             android:drawableLeft="@drawable/ic_android_black_24dp"
+=======
+                            android:drawableLeft="@drawable/ic_important_devices_black_24dp"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                             android:drawableRight="@android:drawable/btn_star_big_off"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
@@ -109,7 +117,11 @@
                             android:text="@string/intermedio2"
                             android:textColor="@android:color/white"
                             android:background="@color/turquesa"
+<<<<<<< HEAD
                             android:drawableLeft="@drawable/ic_group_black_24dp"
+=======
+                            android:drawableLeft="@drawable/ic_public_black_24dp"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                             android:drawableRight="@android:drawable/btn_star_big_off"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
@@ -122,7 +134,11 @@
                             android:text="@string/intermedio3"
                             android:textColor="@android:color/white"
                             android:background="@color/celeste"
+<<<<<<< HEAD
                             android:drawableLeft="@drawable/ic_group_black_24dp"
+=======
+                            android:drawableLeft="@drawable/ic_thumb_up_black_24dp"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                             android:drawableRight="@android:drawable/btn_star_big_off"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
@@ -151,7 +167,11 @@
                             android:text="@string/avanzado1"
                             android:textColor="@android:color/white"
                             android:background="@color/bordo"
+<<<<<<< HEAD
                             android:drawableLeft="@drawable/ic_email_black_24dp"
+=======
+                            android:drawableLeft="@drawable/ic_contact_mail_black_24dp"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                             android:drawableRight="@android:drawable/btn_star_big_off"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
@@ -164,7 +184,11 @@
                             android:text="@string/avanzado2"
                             android:textColor="@android:color/white"
                             android:background="@color/fuccia"
+<<<<<<< HEAD
                             android:drawableLeft="@drawable/ic_menu_manage"
+=======
+                            android:drawableLeft="@drawable/ic_settings_applications_black_24dp"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                             android:drawableRight="@android:drawable/btn_star_big_off"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
@@ -177,7 +201,11 @@
                             android:text="@string/avanzado3"
                             android:textColor="@android:color/white"
                             android:background="@color/rosa"
+<<<<<<< HEAD
                             android:drawableLeft="@drawable/ic_public_black_24dp"
+=======
+                            android:drawableLeft="@drawable/ic_web_black_24dp"
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
                             android:drawableRight="@android:drawable/btn_star_big_off"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"

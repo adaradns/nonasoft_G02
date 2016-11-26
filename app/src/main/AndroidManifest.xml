@@ -37,7 +37,17 @@
         <activity android:name=".Activities.IntroductionTwoActivity" />
         <activity android:name=".Activities.IntroductionThreeActivity" />
         <activity android:name=".Activities.IntroductionFourActivity" />
+<<<<<<< HEAD
 
+=======
+        <activity android:name=".Activities.Juego" />
+<<<<<<< HEAD
+        <activity android:name=".Activities.Terminos"></activity>
+        <activity android:name=".Activities.LogrosActivity"></activity>
+        <activity android:name=".Activities.VideoActivity"></activity>
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         <activity
             android:name=".Activities.SegundaActivity"
             android:label="@string/title_activity_segunda"
@@ -57,6 +67,7 @@
         <activity
             android:name=".Activities.MiniJuegoActivity"
             android:label="@string/title_activity_mini_juego"
+<<<<<<< HEAD
             android:theme="@style/AppTheme" />
         <activity
             android:name=".Activities.LogrosActivity"
@@ -79,6 +90,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activities.SegundaActivity" />
         </activity>
+=======
+            android:theme="@style/AppTheme"></activity>
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     </application>
 
 </manifest>

@@ -3,7 +3,14 @@ package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+<<<<<<< HEAD
 import android.graphics.Typeface;
+=======
+<<<<<<< HEAD
+import android.graphics.Typeface;
+=======
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +29,7 @@ import java.util.List;
  */
 public class AdaptadorIntermedio extends BaseExpandableListAdapter {
     Context contexto;
+<<<<<<< HEAD
     SharedPreferences logros;
     static String[] padre_intermedio = {"APLICACIONES ÚTILES", "REDES SOCIALES", "USO DE REDES SOCIALES"};
 
@@ -29,6 +37,18 @@ public class AdaptadorIntermedio extends BaseExpandableListAdapter {
             {"Google maps", "Notas", "Google fotos"},
             {"Introducción a Facebook", "Introducción a Twitter","Introducción a Instagram"},
             {"Funciones basicas de Facebook", "Funciones basicas de Twitter"}
+=======
+<<<<<<< HEAD
+    static String[] padre_intermedio = {"APLICACIONES UTILES", "REDES SOCIALES", "USO DE REDES SOCIALES"};
+=======
+    static String[] padre_intermedio = {"redes sociales", "Musica/Radio", "Descarga de aplicaciones","aplicaciones utiles"    };
+>>>>>>> a750cbe73a94b14198f76895f838e894c7b222d6
+
+    static String[][] tutoriales_intermedio= {
+            {"Google maps", "Notas", "Google fotos"},
+            {"Loguear/crear cuenta de FaceBook", "Loguear/crear cuenta de Twitter","Loguear/crear cuenta de Instagram"},
+            {"Funciones basicas del Facebook", "Funciones basicas del Twitter","Funciones basicas del Instagram"}
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     };
 
     static String[][] tutoriales_intermedio_generico = {
@@ -90,6 +110,7 @@ public class AdaptadorIntermedio extends BaseExpandableListAdapter {
         tv.setTextColor(Color.parseColor("#ffffff"));
         tv.setTypeface(tf);
 
+<<<<<<< HEAD
         //PARA CARGAR LOS LOGROS EN LA LISTA DE TUTORIALES DE LA CATEGORIA
         logros = contexto.getSharedPreferences("logrosConseguidos",0);
 
@@ -112,6 +133,8 @@ public class AdaptadorIntermedio extends BaseExpandableListAdapter {
             }
         }
 
+=======
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         return inflate;
     }
 

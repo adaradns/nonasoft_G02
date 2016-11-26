@@ -1,5 +1,6 @@
 package com.app.nonasoft.grupo2_desarrollodesoftware.Activities;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
@@ -11,14 +12,25 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Button;
+=======
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
 import android.widget.TextView;
 
 import com.app.nonasoft.grupo2_desarrollodesoftware.R;
 
 public class LogrosActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     Context context;
 
+=======
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     private Toolbar toolbar;
 
     private TextView botonInicial;
@@ -41,10 +53,13 @@ public class LogrosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logros);
 
+<<<<<<< HEAD
         //para mostrar los logros conseguidos
         context = this;
         SharedPreferences logros = getSharedPreferences("logrosConseguidos",0);
 
+=======
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
         botonInicial = (TextView) findViewById(R.id.nivelInicial);
         botonInicialcat1 = (TextView) findViewById(R.id.catInicial1);
         botonInicialcat2 = (TextView) findViewById(R.id.catInicial2);
@@ -91,6 +106,7 @@ public class LogrosActivity extends AppCompatActivity {
         botonAvanzadocat1.setTypeface(tf);
         botonAvanzadocat2.setTypeface(tf);
         botonAvanzadocat3.setTypeface(tf);
+<<<<<<< HEAD
 
         //----Cargando logros conseguidos -----
             //INICIAL
@@ -145,6 +161,8 @@ public class LogrosActivity extends AppCompatActivity {
             botonAvanzado.setCompoundDrawablesWithIntrinsicBounds(0, 0, android.R.drawable.star_big_on, 0);
         }
         //----Cargando logros conseguidos
+=======
+>>>>>>> 96755b89d81283293e2ad2ac2f8d2072f0d08b35
     }
     @Override public boolean onCreateOptionsMenu(android.view.Menu mimenu){
         getMenuInflater().inflate(R.menu.menu_tutorial, mimenu);
